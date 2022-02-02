@@ -14,4 +14,9 @@ export class AppController {
   readFile(@Param("name") name: string) {
     return this.appService.readFile(name);
   }
+
+  @Get('remove/tags')
+  removeTags() {
+    return this.appService.removeTags();
+  }
 }
