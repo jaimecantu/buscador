@@ -84,38 +84,74 @@ export class AppService {
 
   async removeTags() {
     // 0. Tomar la fecha inicial antes de comenzar la función
+    const totalStart = Date.now();
 
     // 1. Obtener los nombres de todos los archivos
+    await fs.readdir("./src/files", async (err, files) => {
+      if (err) {
+        return { error: `Error al leer los archivos: ${err}` };
+      }
 
-    //2. Abrir cada uno, guardar el contenido en un string
-    // Tomamos la fecha inicial desde que se abre el archivo
+      //Paso 1.2: Crear el archivo con el reporte de los totales
+      fs.writeFileSync(
+        "./src/output/logs/act-2.txt",
+        `Archivo\t\t\t\t\tTiempo\n-----------------------------------`
+      );
 
-    //3. Utilizar la librería string-strip-html para remover las etiquetas
-    // Tomamos la fecha final de cada archivo
-    const output = striptags(
-      `<H2>Statement of<BR>
-<BR>
-Janlori Goldman<BR>
-Deputy Director<BR>
-Center for Democracy and Technology<BR>
-<BR>
-Before the<BR>
-House Committee on Government Reform and Oversight<BR>
-Subcommittee on Government Management, Information and Technology<BR>
-on <BR>
-Medical Records Confidentiality
-<P>
-June 14, 1996</CENTER>
-</H2>`);
+      //2. Abrir cada uno, guardar el contenido en un string
+      // Tomamos la fecha inicial desde que se abre el archivo
 
-  return output;
+      let totalTime = 0;
+      let totalFiles = files.length;
 
-    //4. Crear un nuevo archivo .txt con el nuevo string
+      await files.forEach((name) => {
+        let start = Date.now();
+        let end;
+        let file;
+        try {
+          file = fs.readFileSync(`./src/files/${name}`, "utf-8");
+        } catch (err) {
+          return { error: "Archivo no encontrado" };
+        }
 
-    //5. Al terminar, agregar al log act-2.txt el nombre y tiempo de cada archivo
+        //3. Utilizar la librería string-strip-html para remover las etiquetas
+        let output = striptags(file);
+        // Tomamos la fecha final de cada archivo
+        end = Date.now();
 
-    //6. Agregar los totales al log act-2.txt
+        //4. Al terminar, agregar al log act-2.txt el nombre y tiempo de cada archivo
+        let log = `\n${name}\t\t\t\t${end - start} ms`;
+        //totalTime += end - start;
+        fs.appendFile("./src/output/logs/act-2.txt", log, (err) => {
+          return { error: "Error al actualizar los logs" };
+        });
+
+        //5 Crear nuevo archivo .txt con el texto sin etiquetas
+        const newName = name.split(".");
+        fs.writeFileSync(`./src/output/parsed/${newName[0]}.txt`, output);
+      });
+
+      await delay(100);
+      //Obtener la fecha final
+      const totalEnd = Date.now();
+
+      totalTime = totalEnd - totalStart;
+
+      //Paso 4: Agregar totales al reporte
+      fs.appendFile(
+        "./src/output/logs/act-2.txt",
+        `\n-----------------------------------\n${totalFiles} archivos\t\t\t${totalTime} ms`,
+        (err) => {
+          return { error: "Error al actualizar los logs" };
+        }
+      );
+
+      return {message: "Etiquetas eliminadas exitosamente"}
+    });
 
 
+    
+
+    
   }
 }
