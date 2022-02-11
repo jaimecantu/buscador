@@ -38,7 +38,7 @@ california
 centimeter
 centimeter
 change
-chapman@jpl
+chapman
 color
 color
 compares
@@ -107,6 +107,7 @@ irwin
 is
 is
 it
+jpl
 kilometers
 kilometers
 l

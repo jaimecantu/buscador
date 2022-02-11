@@ -40,6 +40,7 @@ almost
 almost
 amnesty
 amnesty
+amnesty
 among
 an
 and
@@ -607,7 +608,7 @@ water
 we
 we
 we
-webmaster@amnesty
+webmaster
 weight
 were
 were

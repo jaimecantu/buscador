@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -862,7 +862,7 @@ over
 own
 oxalate
 oxalate
-page]
+page
 pancakes
 paper
 parfait

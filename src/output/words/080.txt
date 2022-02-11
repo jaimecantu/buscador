@@ -50,10 +50,8 @@
 =
 =
 =
-[
-[mantissa
-]
-]}
+mantissa
+}
 a
 addition
 additionally
@@ -153,7 +151,7 @@ c
 calculated
 calculated
 calibrated
-chapman@jpl
+chapman
 chiefly
 cm
 cm
@@ -249,9 +247,9 @@ four
 frequency
 from
 from
-gen_fac
-gen_fac
-gen_fac
+genfac
+genfac
+genfac
 general
 general
 general
@@ -317,6 +315,7 @@ is
 is
 its
 its
+jpl
 later
 less
 line

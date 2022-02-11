@@ -1,9 +1,9 @@
-[note
-]
+note
 a
 and
 and
 are
+atemi
 atemi
 atemi
 atemi
@@ -58,7 +58,7 @@ site
 software
 stuff
 suite
-support@atemi
+support
 this
 to
 trademark

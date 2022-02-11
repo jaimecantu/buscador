@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -580,7 +580,7 @@ ourselves
 out
 overly
 own
-page]
+page
 paralysed
 paralysis
 paralysis

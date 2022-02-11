@@ -190,7 +190,7 @@ export class AppService {
           //Paso 2. Guardar las palabras en un arreglo, separando el string cada " "
           let parsedFile = file
             .trim()
-            .replace(/[\t\r\n\"-.,:;?!$#-%&¿¡()/0123456789]+/gm, " ");
+            .replace(/[\t\r\n\"-.,:;?@!$#-%&¿¡()/0123456789]+/gm, " ");
           let lowerCase = parsedFile.toLowerCase();
           let wordArray = lowerCase.split(" ");
 
@@ -203,11 +203,11 @@ export class AppService {
           let fileString = "";
           try {
             await sortedWords.forEach(async (word) => {
-              if (word.trim().length > 0) {
-                fileString += `${word}\n`;
+              let sanitized = word.replace(/[\`\[\]\_\-]/g, "");
+              if (sanitized.trim().length > 0) {
+                fileString += `${sanitized}\n`;
               }
             });
-            fileString.replace(/[^A-Za-z0-9]/g, "¿");
             fs.writeFileSync(`src/output/words/${name}`, fileString);
             await delay(500);
           } catch (error) {

@@ -14,8 +14,9 @@ gray
 htm
 iserv
 janice
-jgray@mail
+jgray
 m
+mail
 meet
 mi
 mi

@@ -74,7 +74,7 @@ center
 center
 centered
 channels
-chapman@jpl
+chapman
 city
 city
 city
@@ -178,6 +178,7 @@ is
 is
 its
 joint
+jpl
 just
 just
 just

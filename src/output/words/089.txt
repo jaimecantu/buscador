@@ -150,6 +150,7 @@ jet
 jet
 jpl
 jpl
+jpl
 laboratory
 laboratory
 let
@@ -331,7 +332,7 @@ will
 windows
 with
 wong
-wong@jpl
+wong
 world
 writing
 written

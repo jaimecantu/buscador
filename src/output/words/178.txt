@@ -80,7 +80,7 @@ center
 centered
 central
 change
-chapman@jpl
+chapman
 climate
 coded
 combining
@@ -173,6 +173,7 @@ is
 it
 it
 italy
+jpl
 kilometers
 kilometers
 kilometers

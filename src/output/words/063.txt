@@ -42,6 +42,7 @@ energy
 engineering
 entech
 entech
+entecheng
 evaluation
 feet
 fired
@@ -75,7 +76,7 @@ marketing
 matt
 measures
 menu
-mlloyd@entecheng
+mlloyd
 natatorium
 net
 new

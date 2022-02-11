@@ -1,5 +1,4 @@
-[forwarded
-]
+forwarded
 a
 a
 a
@@ -483,6 +482,7 @@ inc
 indications
 individuals
 indonesia
+infowar
 infowar
 inspected
 instance
@@ -1079,7 +1079,7 @@ washington
 washington
 wayne
 wayne
-webwarrior@infowar
+webwarrior
 wed
 wed
 well

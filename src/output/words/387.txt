@@ -1,4 +1,4 @@
-[the
+the
 a
 a
 a
@@ -849,7 +849,7 @@ railroad
 railroad
 railroad
 railroad
-railroad]
+railroad
 reason
 reasonable
 reasonably

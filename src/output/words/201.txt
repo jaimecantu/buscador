@@ -1,5 +1,7 @@
 a
 a
+aascpa
+aascpa
 accountant
 accounting
 accounting
@@ -52,12 +54,12 @@ her
 home
 in
 industry
-info@aascpa
+info
 is
 is
 is
 key
-kim@aascpa
+kim
 kimberly
 kimberly
 knowledge

@@ -51,10 +51,11 @@ games
 here
 him
 home
+home
 hope
 knowledge
 learn
-learn@home
+learn
 mail
 network
 new

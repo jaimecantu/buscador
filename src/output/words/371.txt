@@ -1,7 +1,6 @@
-[a
-[folytatjuk]
-[pedig
-]
+a
+folytatjuk
+pedig
 a
 a
 a
@@ -6890,6 +6889,7 @@ magyar
 magyar
 magyar
 magyar
+magyar
 magyarellenes
 magyarelleness
 magyargyal
@@ -7632,7 +7632,7 @@ nemzet
 nemzet
 nemzet
 nemzet
-nemzet@magyar
+nemzet
 nemzetgazdas
 nemzetgazdas
 nemzetgyal

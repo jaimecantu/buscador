@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -321,7 +321,7 @@ out
 out
 own
 pacific
-page]
+page
 parent
 part
 part

@@ -1,4 +1,4 @@
-[t]he
+the
 a
 a
 a
@@ -561,6 +561,7 @@ care
 care
 care
 case
+cdt
 cdt
 cdt
 cdt
@@ -3466,7 +3467,7 @@ we
 we
 we
 we
-webmaster@cdt
+webmaster
 wedi
 well
 well

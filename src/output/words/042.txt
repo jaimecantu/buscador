@@ -1,5 +1,5 @@
 =
-[top
+top
 a
 a
 a
@@ -629,7 +629,7 @@ out
 over
 over
 overwhelmed
-page]
+page
 paradigm
 paragidm
 part

@@ -19,8 +19,8 @@ c
 c
 c
 center
-ceos_reader
-chapman@jpl
+ceosreader
+chapman
 contact
 containing
 conversion
@@ -49,6 +49,8 @@ if
 imaging
 instructions
 jet
+jpl
+jpl
 laboratory
 latest
 leary
@@ -66,7 +68,7 @@ o
 obtain
 obtain
 obtain
-oleary@jpl
+oleary
 out
 out
 page

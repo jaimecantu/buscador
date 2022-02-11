@@ -43,7 +43,7 @@ about
 about
 about
 absolutely
-acampbel@reed
+acampbel
 access
 according
 across
@@ -68,7 +68,7 @@ also
 also
 amenities
 american
-amosh@eden
+amosh
 an
 an
 an
@@ -236,6 +236,7 @@ e
 earth
 earthquake
 easier
+eden
 edu
 edu
 edu
@@ -749,6 +750,7 @@ reading
 real
 really
 really
+reed
 regularly
 replicates
 report
@@ -1073,6 +1075,7 @@ us
 us
 us
 us
+usc
 use
 used
 used
@@ -1161,7 +1164,7 @@ wonder
 wondered
 wondering
 woodring
-woodring@usc
+woodring
 word
 work
 worked

@@ -1,17 +1,15 @@
 =
-[a
-[a
-[folytatjuk]t
-[jelenteset]
-[meri
-[pellionisz
-[pl
-[szerint
-[uj
-[zarojelben
-]
-]
-]goncz
+a
+a
+folytatjukt
+jelenteset
+meri
+pellionisz
+pl
+szerint
+uj
+zarojelben
+goncz
 a
 a
 a
@@ -1856,7 +1854,7 @@ antisemit
 antiszemitanak
 antiszemitazo
 antiszemitizmus
-antiszemitizmus]
+antiszemitizmus
 antiszemitizmusnak
 antiszemitizmusnak
 anyagi
@@ -1865,7 +1863,7 @@ anyamedr
 apartheid
 apartheid
 apartheid
-apon@azstarnet
+apon
 apr
 aprilis
 aprosag
@@ -2135,6 +2133,7 @@ azonban
 azonnal
 azonnal
 azonnal
+azstarnet
 azstarnet
 azt
 azt
@@ -2418,7 +2417,7 @@ biztos
 biztosabban
 biztosan
 biztositani
-biztositani]
+biztositani
 biztositja
 biztositja
 bk
@@ -4703,6 +4702,8 @@ gk
 gk
 glap
 gleges
+gmc
+gmc
 gnak
 gnak
 gnak
@@ -5173,7 +5174,7 @@ hozzatettem
 html
 html
 html
-html]
+html
 http
 http
 http
@@ -7272,8 +7273,8 @@ magyar
 magyar
 magyar
 magyar
-magyar@gmc
-magyar@gmc
+magyar
+magyar
 magyarallampolgar
 magyarbar
 magyarellenes
@@ -8150,6 +8151,7 @@ nemzetkozi
 nemzetkozi
 nemzetstrat
 nemzetstrat
+netcom
 nev
 nev
 nev
@@ -8612,7 +8614,7 @@ oacute
 oacute
 oacute
 obolkornyekenelnok
-obolkornyekpellio@netcom
+obolkornyekpellio
 ocirc
 ocirc
 ocirc
@@ -8636,7 +8638,7 @@ olcs
 olcs
 oldal
 oldal
-oldal]
+oldal
 oldala
 oldalbela
 oldalilona
@@ -10682,7 +10684,7 @@ szerint
 szerint
 szerinti
 szerk
-szerk]
+szerk
 szerkesztoseg
 szeruen
 szervez

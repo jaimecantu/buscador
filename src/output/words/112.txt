@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -367,7 +367,7 @@ over
 own
 own
 pacific
-page]
+page
 part
 part
 parts

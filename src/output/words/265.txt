@@ -3,6 +3,7 @@ a
 a
 a
 a
+a
 acceptance
 ada
 affects
@@ -43,7 +44,7 @@ click
 click
 com
 comments
-comments@a
+comments
 communications
 compared
 comparison

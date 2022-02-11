@@ -39,6 +39,7 @@ a
 a
 a
 a
+a
 ability
 able
 abolition
@@ -417,7 +418,7 @@ colors
 com
 combine
 comments
-comments@a
+comments
 commercial
 communications
 community

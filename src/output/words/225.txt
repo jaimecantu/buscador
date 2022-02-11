@@ -1,8 +1,8 @@
-[home]
-[mail]
-[next]
-[previous]
-[up]
+home
+mail
+next
+previous
+up
 aaa
 aaa
 aaa

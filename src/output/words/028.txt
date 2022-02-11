@@ -1,5 +1,4 @@
-[revival]
-____________________________________________________
+revival
 a
 a
 a
@@ -223,6 +222,7 @@ cpj
 cpj
 cpj
 cpj
+cpj
 credentials
 crime
 crime
@@ -267,7 +267,7 @@ ensure
 enter
 entry
 europe
-europe@cpj
+europe
 exam
 example
 excellency

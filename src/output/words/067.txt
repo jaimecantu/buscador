@@ -83,7 +83,7 @@ center
 center
 centered
 channels
-chapman@jpl
+chapman
 circular
 colors
 companion
@@ -189,6 +189,7 @@ is
 its
 its
 its
+jpl
 kamchatka
 kamchatka
 kamchatka

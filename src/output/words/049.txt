@@ -15,6 +15,7 @@ and
 and
 any
 any
+aol
 are
 area
 associated
@@ -38,6 +39,7 @@ company
 conspiracy
 contacts
 cost
+csinet
 cups
 cups
 d
@@ -113,8 +115,8 @@ my
 my
 mystic
 mystic
-mysticoz@aol
-mysticoz@csinet
+mysticoz
+mysticoz
 name
 net
 nice

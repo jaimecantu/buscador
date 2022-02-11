@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -987,7 +987,7 @@ over
 over
 own
 ozone
-page]
+page
 paid
 paradigm
 paranoia

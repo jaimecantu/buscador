@@ -2605,7 +2605,7 @@ br
 br
 br
 br
-br_lab
+brlab
 bra
 brad
 brad
@@ -2664,6 +2664,7 @@ bridge
 bridgend
 bridgeton
 bridgeton
+bridgewater
 bridgewater
 bridlib
 brigadoon
@@ -3644,7 +3645,7 @@ camden
 camden
 camosun
 camosun
-camp_hill
+camphill
 campaspe
 campplan
 campus
@@ -13454,7 +13455,7 @@ fosen
 fotf
 foundation
 founders
-founders_admin
+foundersadmin
 foxberry
 foxboro
 foxcroft
@@ -14535,7 +14536,7 @@ gulfaero
 gulfaero
 gulfnet
 gulftel
-gumby@bridgewater
+gumby
 gunma
 gunma
 gunnison
@@ -14590,7 +14591,7 @@ hamilton
 hamilton
 hamilton
 hamline
-hamon_arts
+hamonarts
 hampshire
 hamptonu
 han
@@ -14796,7 +14797,7 @@ hiline
 hilink
 hill
 hill
-hilles_academic
+hillesacademic
 hills
 hillsboro
 hillsboro
@@ -17471,8 +17472,8 @@ lab
 lab
 lab
 lab
-lab_c_g
-lab_j_
+labcg
+labj
 laba
 labs
 labs
@@ -29138,7 +29139,7 @@ tt
 tt
 ttci
 ttd
-ttd_omaha
+ttdomaha
 tti
 ttsh
 ttu
@@ -31573,7 +31574,7 @@ vafb
 vailnet
 vais
 valdosta
-valdosta_private
+valdostaprivate
 valenciennes
 valley
 valley
@@ -32071,7 +32072,7 @@ west
 west
 westal
 westbank
-western_sem
+westernsem
 westfield
 westfield
 westga

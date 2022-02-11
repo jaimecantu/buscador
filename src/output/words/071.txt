@@ -38,6 +38,7 @@ energy
 energy
 energy
 entech
+entecheng
 estimated
 for
 for
@@ -55,7 +56,7 @@ major
 marketing
 matt
 menu
-mlloyd@entecheng
+mlloyd
 muhlenberg
 muhlenberg
 net

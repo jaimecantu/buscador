@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -1282,7 +1282,7 @@ own
 own
 own
 own
-page]
+page
 part
 part
 part

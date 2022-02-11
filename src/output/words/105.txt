@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -517,7 +517,7 @@ outline
 outside
 over
 over
-page]
+page
 painters
 paints
 paper

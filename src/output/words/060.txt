@@ -1,5 +1,4 @@
-[aesop
-]
+aesop
 a
 a
 a

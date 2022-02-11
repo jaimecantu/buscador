@@ -69,7 +69,7 @@ c
 can
 caused
 centered
-chapman@jpl
+chapman
 classifies
 clearly
 climate
@@ -200,6 +200,7 @@ is
 is
 it
 its
+jpl
 kilometer
 kilometer
 kilometers

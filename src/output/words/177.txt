@@ -97,7 +97,7 @@ get
 get
 gladly
 graphics
-graphics@quark
+graphics
 handle
 have
 have
@@ -139,8 +139,8 @@ mail
 mail
 mail
 mail
-mail@miserybay
-mail@miserybay
+mail
+mail
 me
 michigan
 min
@@ -149,6 +149,8 @@ misery
 misery
 misery
 misery
+miserybay
+miserybay
 mistakes
 my
 name
@@ -198,6 +200,7 @@ publications
 publications
 publications
 publications
+quark
 questions
 questions
 quote

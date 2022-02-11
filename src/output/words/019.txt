@@ -1,5 +1,5 @@
-[journalists]
-[stationed
+journalists
+stationed
 a
 a
 a
@@ -1547,7 +1547,7 @@ german
 german
 german
 german
-germany]
+germany
 get
 get
 get

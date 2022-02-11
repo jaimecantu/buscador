@@ -62,7 +62,7 @@ dealing
 decision
 dwyer
 dwyer
-dwyer@pmsu
+dwyer
 e
 east
 east
@@ -112,16 +112,18 @@ lubiensky
 m
 m
 mail
-mail@miserybay
+mail
 masterson
 masterson
+math
 mecha
 meridian
 michigan
 michigan
 misery
+miserybay
 msu
-mutersn@math
+mutersn
 native
 newsletter
 now
@@ -154,6 +156,7 @@ peace
 plans
 plans
 please
+pmsu
 produce
 produced
 produced

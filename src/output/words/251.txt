@@ -19,6 +19,7 @@ a
 a
 a
 a
+a
 ability
 about
 abstract
@@ -214,7 +215,7 @@ click
 cognitive
 com
 comments
-comments@a
+comments
 communications
 community
 community

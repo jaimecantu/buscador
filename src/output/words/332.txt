@@ -21,6 +21,7 @@ a
 a
 a
 a
+a
 ability
 about
 about
@@ -211,7 +212,7 @@ color
 com
 come
 comments
-comments@a
+comments
 communications
 communist
 communities

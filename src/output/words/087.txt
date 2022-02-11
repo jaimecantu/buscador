@@ -83,6 +83,8 @@ autoshop
 autoshop
 autoshop
 autoshop
+autoshop
+autoshop
 available
 available
 available
@@ -565,8 +567,8 @@ week
 week
 what
 what
-whatsnew@autoshop
-whatsnew@autoshop
+whatsnew
+whatsnew
 when
 whether
 which

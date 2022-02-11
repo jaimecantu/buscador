@@ -4,6 +4,7 @@ a
 a
 a
 a
+a
 according
 according
 affecting
@@ -52,7 +53,7 @@ click
 click
 com
 comments
-comments@a
+comments
 communications
 comparison
 comparison

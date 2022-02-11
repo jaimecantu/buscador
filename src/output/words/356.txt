@@ -1,11 +1,10 @@
 =wggg
 >>
 >>a
-[
-[szerk
-]a
-]ez
-]lengyel
+szerk
+a
+ez
+lengyel
 a
 a
 a
@@ -155,8 +154,8 @@ de
 de
 de
 dejobb
-disclaimer_
-disclaimer_
+disclaimer
+disclaimer
 dissemination
 dobta
 dolgozo
@@ -345,7 +344,7 @@ itt
 itt
 izgatas
 izgatas
-izgatasrol[kotott
+izgatasrolkotott
 jardara
 javara
 javaslatom
@@ -421,6 +420,8 @@ magam
 magat
 magat
 magatartaskimutathato
+magyar
+magyar
 magyar
 mar
 mar
@@ -504,8 +505,8 @@ nemzet
 nemzet
 nemzet
 nemzet
-nemzet@magyar
-nemzet@magyar
+nemzet
+nemzet
 nepcsoport
 netan
 nez
@@ -586,7 +587,7 @@ soroljam
 sot
 subject
 subs
-subscribe__
+subscribe
 sucked
 szabadon
 szabadsagat
@@ -709,7 +710,7 @@ volta
 voltaztan
 way
 www
-www_page___
+wwwpage
 wz
 wzqsrnqc
 x

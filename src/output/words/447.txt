@@ -49,12 +49,10 @@
 >the
 >who
 >with
-[forwarded
-[forwarded
-]
-]
-_especially_
-_especially_
+forwarded
+forwarded
+especially
+especially
 a
 a
 a
@@ -180,8 +178,8 @@ birdsey
 birdsey
 birdsey
 birdsey
-birdsey@lahorwpoa
-birdsey@lahorwpoa
+birdsey
+birdsey
 bit
 bitburg
 bitburg
@@ -250,8 +248,8 @@ david
 david
 david
 david
-davidm@paknet
-davidm@paknet
+davidm
+davidm
 day
 dealer
 dealer
@@ -404,6 +402,7 @@ index
 information
 information
 infowar
+infowar
 interesting
 interesting
 intern
@@ -440,6 +439,8 @@ just
 know
 knows
 knows
+lahorwpoa
+lahorwpoa
 larger
 last
 last
@@ -580,6 +581,8 @@ other
 other
 out
 out
+paknet
+paknet
 part
 part
 particular
@@ -845,7 +848,7 @@ wayne
 wayne
 wayne
 wayne
-webwarrior@infowar
+webwarrior
 wed
 wed
 went

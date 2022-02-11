@@ -2087,7 +2087,7 @@ br
 br
 br
 br
-br_lab
+brlab
 brad
 brad
 brad
@@ -2120,6 +2120,7 @@ brf
 brg
 bridge
 bridge
+bridgewater
 bridgewater
 bridlib
 brigadoon
@@ -10724,7 +10725,7 @@ etse
 etsu
 eu
 eua
-eugenides_found
+eugenidesfound
 eunet
 eunet
 eunet
@@ -11436,9 +11437,9 @@ gdi
 ge
 ge
 ge
-ge_cs
-ge_rd
-ge_xc
+gecs
+gerd
+gexc
 geac
 gecinc
 gecm
@@ -12189,7 +12190,7 @@ hik
 hili
 hiline
 hill
-hilles_academic
+hillesacademic
 hills
 hillsboro
 hillsdale
@@ -14381,8 +14382,8 @@ lab
 lab
 lab
 lab
-lab_c_g
-lab_j_
+labcg
+labj
 laba
 labri
 labs
@@ -23099,7 +23100,7 @@ sunquest
 sunray
 sunrem
 sunriver
-sunshine@bridgewater
+sunshine
 suny
 sunygenesee
 sunyrockland
@@ -25781,7 +25782,7 @@ vais
 vak
 valdosta
 valdosta
-valdosta_private
+valdostaprivate
 valley
 valley
 valley
@@ -26186,7 +26187,7 @@ west
 west
 west
 westat
-western_sem
+westernsem
 westerville
 westford
 westga

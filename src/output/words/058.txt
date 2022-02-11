@@ -1,4 +1,4 @@
-[top
+top
 a
 a
 a
@@ -380,7 +380,7 @@ other
 our
 outlawed
 overweight
-page]
+page
 paper
 part
 participants

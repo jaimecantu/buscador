@@ -1,8 +1,4 @@
-_
-_
-_
-_
-_port
+port
 a
 a
 a
@@ -374,7 +370,7 @@ city
 clark
 climate
 climate
-cmr_nickm
+cmrnickm
 cnc
 cnc
 cnes
@@ -582,7 +578,7 @@ cyril
 d
 d
 d
-d_
+d
 dal
 dallas
 dan
@@ -1805,7 +1801,7 @@ stats
 statsjul
 statsnow
 steve
-steve_meyer
+stevemeyer
 stiglqst
 stikom
 stomate
@@ -1817,10 +1813,10 @@ strike
 stuttgart
 styx
 su
-su_lab_nt
+sulabnt
 subdomain
 subdomain
-sundialin_
+sundialin
 sunset
 sunvalley
 sunysb

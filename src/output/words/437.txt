@@ -11553,7 +11553,7 @@ lab
 lab
 lab
 lab
-lab_c_g
+labcg
 laba
 labs
 labs
@@ -20282,7 +20282,7 @@ va
 vailnet
 vak
 valdosta
-valdosta_private
+valdostaprivate
 valley
 valleynet
 value
@@ -20571,7 +20571,7 @@ west
 westar
 westdat
 westel
-western_sem
+westernsem
 westford
 westmont
 westnet

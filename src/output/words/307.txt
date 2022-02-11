@@ -114,6 +114,7 @@ a
 a
 a
 a
+a
 abortion
 about
 about
@@ -994,7 +995,7 @@ comic
 coming
 commander
 comments
-comments@a
+comments
 common
 communications
 companion
@@ -3542,7 +3543,7 @@ relationship
 relationship
 relationship
 relationship
-relationship[
+relationship
 relationships
 religion
 religion

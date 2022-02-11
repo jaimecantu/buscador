@@ -39,7 +39,7 @@ cold
 cold
 cold
 cold
-cold_numbers
+coldnumbers
 comments
 conspiracy
 copy
@@ -63,6 +63,8 @@ explaining
 fan
 far
 feel
+fenris
+fenris
 first
 for
 for
@@ -101,13 +103,13 @@ line
 links
 list
 list
-macjordomo@fenris
+macjordomo
 mailing
 march
 march
 message
 message
-mrs_brinker@fenris
+mrsbrinker
 my
 name
 need
@@ -217,4 +219,4 @@ ww
 ww
 you
 you
-your_real_name
+yourrealname

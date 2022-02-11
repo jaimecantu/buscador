@@ -1,11 +1,11 @@
-[about
-[class
-[instructors]
-[mailing
-[maps]
-[registration
-[search]
-[who
+about
+class
+instructors
+mailing
+maps
+registration
+search
+who
 a
 a
 a
@@ -619,7 +619,7 @@ california
 california
 california
 california
-call]
+call
 cambridge
 cameron
 campaign
@@ -1465,7 +1465,7 @@ including
 indigo
 individuals
 industry
-info]
+info
 inheritance
 ink
 innovative
@@ -1730,7 +1730,7 @@ ling
 linguistics
 linguistics
 links
-list]
+list
 literature
 local
 local
@@ -2346,7 +2346,7 @@ program
 program
 program
 programs
-programs]
+programs
 proprietor
 prosecutor
 provides
@@ -2501,7 +2501,7 @@ santa
 santa
 santiago
 savas
-schedule]
+schedule
 scholar
 school
 school

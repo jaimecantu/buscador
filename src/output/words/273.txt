@@ -24,6 +24,7 @@ a
 a
 a
 a
+a
 abstract
 abstracts
 achievement
@@ -186,7 +187,7 @@ clinical
 clinical
 com
 comments
-comments@a
+comments
 communications
 complex
 components

@@ -70,6 +70,8 @@ amnesty
 amnesty
 amnesty
 amnesty
+amnesty
+amnesty
 amnesty�s
 amnesty�s
 an
@@ -897,7 +899,7 @@ since
 situation
 situation
 slaves
-smagenni@amnesty
+smagenni
 so
 societies
 sold
@@ -1159,7 +1161,7 @@ was
 was
 was
 weaknesses
-webmaster@amnesty
+webmaster
 well
 well
 what

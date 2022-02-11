@@ -8208,7 +8208,7 @@ gdt
 ge
 ge
 ge
-ge_cs
+gecs
 geac
 gecm
 geco
@@ -10231,7 +10231,7 @@ lab
 lab
 lab
 lab
-lab_c_g
+labcg
 labs
 labs
 labs
@@ -16065,7 +16065,7 @@ st
 st
 st
 st
-staff_
+staff
 staffnet
 stanford
 stanford

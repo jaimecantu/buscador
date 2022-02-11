@@ -407,7 +407,7 @@ diverse
 divided
 division
 dnai
-documents[md]similar
+documentsmdsimilar
 doing
 dolls
 done
@@ -822,7 +822,7 @@ keypal
 kid
 kid
 kid
-kidopedia[md]an
+kidopediamdan
 kidpub
 kidpub
 kids
@@ -856,8 +856,8 @@ kids
 kids
 kids
 kids
-kids_home
-kids_space
+kidshome
+kidsspace
 kidsafe
 kidsafety
 kidsclub
@@ -1013,7 +1013,7 @@ new
 new
 new
 new
-news_rel
+newsrel
 newspaper
 newspapers
 nl
@@ -1641,7 +1641,7 @@ with
 with
 with
 with
-wm_intro
+wmintro
 wonder
 wonderdir
 wonderland
@@ -1649,7 +1649,7 @@ wonderland
 word
 word
 word
-word_of_day
+wordofday
 work
 work
 work

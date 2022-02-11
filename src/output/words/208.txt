@@ -87,7 +87,7 @@ centered
 chance
 change
 changes
-chapman@jpl
+chapman
 clear
 climatic
 cloud
@@ -182,6 +182,7 @@ it
 its
 jack
 johnson
+jpl
 kilometers
 kilometers
 l

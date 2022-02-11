@@ -22,6 +22,7 @@ a
 a
 a
 a
+a
 about
 above
 accomplished
@@ -240,7 +241,7 @@ click
 color
 com
 comments
-comments@a
+comments
 communications
 compares
 comparing

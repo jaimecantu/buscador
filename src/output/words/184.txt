@@ -22,6 +22,7 @@ allen
 along
 already
 amnesty
+amnesty
 an
 an
 and
@@ -508,7 +509,7 @@ virginia
 virginia
 virginia
 waives
-webmaster@amnesty
+webmaster
 welcome
 whatever
 when

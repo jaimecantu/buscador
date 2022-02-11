@@ -18,6 +18,7 @@ a
 a
 a
 a
+a
 activists
 activity
 acute
@@ -195,7 +196,7 @@ college
 college
 com
 comments
-comments@a
+comments
 communicable
 communicable
 communications

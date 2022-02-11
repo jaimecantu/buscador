@@ -1,6 +1,7 @@
 =price
 a
 a
+a
 all
 aloutette
 american
@@ -40,7 +41,7 @@ click
 color
 com
 comments
-comments@a
+comments
 communications
 concerned
 concludes

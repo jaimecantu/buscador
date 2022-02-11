@@ -1,9 +1,5 @@
-[
-[senate
-[under
-]
-]
-]
+senate
+under
 a
 a
 a

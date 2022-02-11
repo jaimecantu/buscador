@@ -38,7 +38,7 @@ can
 carbon
 change
 changes
-chapman@jpl
+chapman
 chronic
 climate
 cloud
@@ -81,6 +81,7 @@ in
 in
 information
 is
+jpl
 large
 leads
 losses

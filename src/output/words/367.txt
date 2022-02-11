@@ -9,8 +9,8 @@ com
 comx
 comx
 content
-disclaimer_
-disclaimer_
+disclaimer
+disclaimer
 dissemination
 e
 e
@@ -66,6 +66,8 @@ m
 m
 m
 mad
+magyar
+magyar
 marja
 mert
 mm
@@ -86,8 +88,8 @@ nemzet
 nemzet
 nemzet
 nemzet
-nemzet@magyar
-nemzet@magyar
+nemzet
+nemzet
 nn
 not
 nya
@@ -105,7 +107,7 @@ siliconvalley
 siliconvalley
 subject
 subs
-subscribe__
+subscribe
 t
 t
 t
@@ -121,7 +123,7 @@ unsubs
 unsubscribe
 v
 www
-www_page___
+wwwpage
 x
 x
 y

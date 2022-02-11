@@ -2,7 +2,7 @@ amip
 amip
 amip
 amip
-amip@pcmdi
+amip
 an
 climatologies
 contact
@@ -29,6 +29,7 @@ office
 ozone
 ozone
 page
+pcmdi
 project
 recommendation
 recommendation

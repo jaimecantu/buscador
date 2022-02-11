@@ -1,5 +1,5 @@
-[canada]
-[united
+canada
+united
 a
 a
 a
@@ -739,7 +739,7 @@ speech
 sports
 starter
 states
-states]
+states
 studies
 suggestions
 supported
@@ -840,6 +840,8 @@ upper
 us
 use
 usta
+utoronto
+utoronto
 van
 version
 virtual
@@ -847,8 +849,8 @@ virtual
 virtual
 virtual
 web
-web@utoronto
-web@utoronto
+web
+web
 website
 websites
 well

@@ -34,7 +34,7 @@ experience
 financial
 financials
 financials
-financials@mk
+financials
 focus
 for
 force
@@ -61,6 +61,7 @@ management
 markets
 merger
 million
+mk
 mk
 mk
 mk

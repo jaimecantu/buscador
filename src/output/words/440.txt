@@ -13,6 +13,7 @@ inc
 infowar
 infowar
 infowar
+infowar
 interpact
 itsec
 jul
@@ -566,4 +567,4 @@ txt
 txt
 txt
 voice
-webwarrior@infowar
+webwarrior

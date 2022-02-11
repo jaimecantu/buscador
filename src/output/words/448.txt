@@ -1,12 +1,10 @@
 >
 >anyone
 >at
-@
-@@@@@@@@@@@@@@@@@@@@@@@@@@
 about
 adscapes
-adscapes@ix
-adscapes@ix
+adscapes
+adscapes
 afb
 afb
 am
@@ -38,7 +36,7 @@ be
 birdhaex
 birdsey
 birdsey
-birdsey@lahorwpoa
+birdsey
 bolling
 bolling
 bolling
@@ -50,7 +48,7 @@ cloaks
 cloaks
 coffee
 coffee
-coffee@vet
+coffee
 com
 com
 com
@@ -73,7 +71,7 @@ date
 date
 david
 david
-davidm@paknet
+davidm
 day
 dc
 degree
@@ -143,6 +141,7 @@ infosecurity
 infosecurity
 infosecurity
 infowar
+infowar
 intel
 intel
 intell
@@ -156,10 +155,13 @@ is
 issue
 it
 it
+ix
+ix
 john
 john
 knowledge
 ksu
+lahorwpoa
 latest
 librarian
 library
@@ -206,6 +208,7 @@ or
 org
 org
 other
+paknet
 particular
 particular
 pending
@@ -276,10 +279,11 @@ u
 url
 us
 v
+vet
 voice
 washington
 we
-webwarrior@infowar
+webwarrior
 who
 who
 will

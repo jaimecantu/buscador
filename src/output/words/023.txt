@@ -1,3 +1,4 @@
+aol
 at
 com
 dennis
@@ -20,7 +21,7 @@ oak
 office
 p
 parish
-raschu@aol
+raschu
 richard
 royal
 royal

@@ -20,7 +20,7 @@ be
 best
 carlos
 carlos
-carlos@uninet
+carlos
 cases
 cia
 cloaks
@@ -55,6 +55,7 @@ indian
 indonesia
 information
 information
+infowar
 infowar
 intel
 intelligence
@@ -98,11 +99,12 @@ the
 the
 to
 topics
+uninet
 us
 us
 us
 us
 voice
-webwarrior@infowar
+webwarrior
 would
 would

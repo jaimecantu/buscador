@@ -33,7 +33,7 @@ directory
 dr
 e
 er
-execsec@scar
+execsec
 executive
 executive
 facsimile
@@ -88,6 +88,7 @@ research
 research
 research
 road
+scar
 scar
 scar
 scar

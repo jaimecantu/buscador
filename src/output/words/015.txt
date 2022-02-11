@@ -17,12 +17,13 @@ as
 asu
 asu
 asu
+asu
 at
 at
 blumberg
 blumberg
 blumberg
-blumberg@asu
+blumberg
 boundary
 boundary
 bruce
@@ -33,7 +34,7 @@ by
 c
 canyon
 canyon
-chapman@jpl
+chapman
 climate
 color
 color
@@ -105,6 +106,7 @@ is
 israel
 iversen
 jim
+jpl
 jpl
 kbytes
 kbytes

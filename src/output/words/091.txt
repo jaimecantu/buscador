@@ -1,6 +1,6 @@
-[institute
-[philosophies]
-[top
+institute
+philosophies
+top
 a
 a
 a
@@ -576,7 +576,7 @@ other
 other
 our
 page
-page]
+page
 partners
 partnership
 pass
@@ -648,7 +648,7 @@ s
 s
 s
 s
-s]
+s
 sailing
 same
 says
