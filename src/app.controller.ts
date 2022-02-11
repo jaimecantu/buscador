@@ -19,4 +19,9 @@ export class AppController {
   removeTags() {
     return this.appService.removeTags();
   }
+
+  @Get('process/words')
+  words() {
+    return this.appService.words();
+  }
 }

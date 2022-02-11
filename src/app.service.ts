@@ -146,12 +146,109 @@ export class AppService {
         }
       );
 
-      return {message: "Etiquetas eliminadas exitosamente"}
+      return { message: "Etiquetas eliminadas exitosamente" };
     });
+  }
 
+  async words() {
+    // 0. Tomar la fecha inicial antes de comenzar la función
+    const totalStart = Date.now();
 
-    
+    // 1. Obtener los nombres de todos los archivos
+    await fs.readdir("./src/output/parsed", async (err, files) => {
+      if (err) {
+        console.log("Error al leer los archivos. " + err);
+      }
+      //Paso 1.2: Crear el archivo con el reporte de los totales
+      try {
+        fs.writeFileSync(
+          "./src/output/logs/act-3.txt",
+          `Archivo\t\t\t\t\tTiempo\n-----------------------------------`
+        );
+      } catch (error) {
+        console.error(error);
+      }
 
-    
+      //2. Abrir cada uno, guardar el contenido en un string
+      // Tomamos la fecha inicial desde que se abre el archivo
+
+      let totalTime = 0;
+      let totalFiles = files.length;
+
+      await files.forEach(async (name) => {
+        //console.log(name);
+        if (name != ".DS_Store") {
+          let start = Date.now();
+          let end;
+          let file;
+          try {
+            file = fs.readFileSync(`./src/output/parsed/${name}`, "utf-8");
+          } catch (err) {
+            console.log("Archivo no encontrado. " + name);
+          }
+
+          //Paso 2. Guardar las palabras en un arreglo, separando el string cada " "
+          let parsedFile = file
+            .trim()
+            .replace(/[\t\r\n\"-.,:;?!$#-%&¿¡()/0123456789]+/gm, " ");
+          let lowerCase = parsedFile.toLowerCase();
+          let wordArray = lowerCase.split(" ");
+
+          //Paso 3. Ordenar alfabéticamente las palabras en el arreglo
+          let sortedWords = wordArray.sort();
+          // Tomamos la fecha final de cada archivo
+          end = Date.now();
+
+          //console.log(name + end);
+          let fileString = "";
+          try {
+            await sortedWords.forEach(async (word) => {
+              if (word.trim().length > 0) {
+                fileString += `${word}\n`;
+              }
+            });
+            fileString.replace(/[^A-Za-z0-9]/g, "¿");
+            fs.writeFileSync(`src/output/words/${name}`, fileString);
+            await delay(500);
+          } catch (error) {
+            console.log("Error al crear el archivo " + name);
+            console.error(error);
+          }
+          //4. Al terminar, agregar al log act-3.txt el nombre y tiempo de cada archivo
+          let log = `\n${name}\t\t\t\t${end - start} ms`;
+          //totalTime += end - start;
+          await delay(500);
+          await fs.appendFile("./src/output/logs/act-3.txt", log, (err) => {
+            if (err) {
+              console.log("Error al guardar los logs del archivo " + name);
+              throw err;
+            }
+          });
+        } else {
+          totalFiles--;
+        }
+      });
+
+      await delay(500);
+      //Obtener la fecha final
+      const totalEnd = Date.now();
+
+      totalTime = totalEnd - totalStart;
+      await delay(5000);
+      //Paso 4: Agregar totales al reporte
+      fs.appendFile(
+        "./src/output/logs/act-3.txt",
+        `\n-----------------------------------\n${totalFiles} archivos\t\t\t${totalTime} ms`,
+        (err) => {
+          if (err) {
+            console.log("Error al guardar los totales");
+            console.log(err);
+            throw err;
+          }
+        }
+      );
+
+      return { message: "Palabras guardadas exitosamente" };
+    });
   }
 }
