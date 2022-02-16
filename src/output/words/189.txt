@@ -1,9 +1,3 @@
-=
-=
-=
-=
-=highest
-=lowest
 a
 a
 a
@@ -337,7 +331,7 @@ assessment
 assessment
 assist
 assists
-assumed=
+assumed
 at
 at
 at
@@ -966,6 +960,7 @@ high
 high
 high
 high
+highest
 hire
 holiday
 home
@@ -1269,6 +1264,7 @@ lot
 low
 low
 lower
+lowest
 loyalty
 made
 magazine
@@ -2196,7 +2192,7 @@ three
 through
 through
 through
-throughout=
+throughout
 thursday
 thursday
 time

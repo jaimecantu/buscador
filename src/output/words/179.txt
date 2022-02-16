@@ -1,5 +1,3 @@
-=highest
-=lowest
 a
 a
 a
@@ -1183,6 +1181,7 @@ high
 high
 high
 highest
+highest
 his
 his
 hoc
@@ -1622,6 +1621,7 @@ longer
 looked
 low
 lower
+lowest
 luca
 lucio
 luxury

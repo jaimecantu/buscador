@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1715,7 +1714,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focus
 focus
@@ -1724,6 +1723,7 @@ focuses
 focusing
 focusing
 food
+footnotes
 for
 for
 for
@@ -3120,6 +3120,7 @@ overview
 own
 pacific
 pacific
+pages
 panama
 paper
 paper
@@ -3326,7 +3327,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomena
 phenomenon
 phenomenon
@@ -3426,6 +3427,7 @@ present
 present
 presents
 pressure
+price
 price
 prices
 prices
@@ -3902,7 +3904,7 @@ s
 s
 s
 s
-s=sources
+s
 safeguard
 sahara
 saharan
@@ -3981,6 +3983,7 @@ some
 some
 sophistication
 sound
+sources
 south
 south
 south
@@ -5023,6 +5026,7 @@ ww
 wwi
 year
 year
+year
 years
 years
 yen
@@ -5177,7 +5181,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 yugoslavia
 zionism
 zone

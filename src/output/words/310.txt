@@ -1,5 +1,4 @@
 and
-=price
 a
 a
 a
@@ -640,7 +639,8 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
+footnotes
 for
 for
 for
@@ -1152,6 +1152,7 @@ overtones
 overtones
 own
 pacifists
+pages
 pain
 paper
 paper
@@ -1231,7 +1232,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophical
 philosophy
 pia
@@ -1263,6 +1264,7 @@ power
 pregnancy
 prejudice
 prey
+price
 pride
 principal
 products
@@ -1444,7 +1446,7 @@ s
 s
 s
 s
-s=sources
+s
 saints
 salesman
 salvation
@@ -1509,6 +1511,7 @@ sociology
 solid
 somewhat
 sonnets
+sources
 south
 southern
 specific
@@ -1947,6 +1950,7 @@ writing
 writings
 written
 year
+year
 youth
 yr
 yr
@@ -2009,5 +2013,5 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zola

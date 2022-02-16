@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1340,7 +1339,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focusing
 focusing
@@ -1351,6 +1350,7 @@ food
 food
 food
 food
+footnotes
 for
 for
 for
@@ -2309,6 +2309,7 @@ overall
 overview
 owing
 packard
+pages
 paper
 paper
 paper
@@ -2457,7 +2458,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philanthropies
 philosophers
 philosophies
@@ -2540,6 +2541,7 @@ pressure
 pressure
 pressures
 prestige
+price
 price
 price
 prices
@@ -2895,7 +2897,7 @@ s
 s
 s
 s
-s=sources
+s
 salient
 savings
 scandals
@@ -2997,6 +2999,7 @@ solution
 solved
 solving
 some
+sources
 sources
 sources
 south
@@ -3748,6 +3751,7 @@ would
 would
 wrath
 written
+year
 years
 years
 years
@@ -3873,4 +3877,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

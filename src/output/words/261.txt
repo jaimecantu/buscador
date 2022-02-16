@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -179,7 +178,8 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
+footnotes
 for
 for
 form
@@ -298,6 +298,7 @@ order
 other
 out
 overview
+pages
 paper
 paper
 paper
@@ -323,7 +324,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophical
 philosophy
 physiological
@@ -340,6 +341,7 @@ potency
 potential
 prenatal
 presence
+price
 pro
 pro
 pro
@@ -381,7 +383,7 @@ s
 s
 s
 s
-s=sources
+s
 science
 science
 seeking
@@ -403,6 +405,7 @@ sociological
 sociology
 sometimes
 sound
+sources
 specific
 sports
 start
@@ -510,6 +513,7 @@ worker
 worker
 would
 written
+year
 yr
 yr
 yr
@@ -522,4 +526,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

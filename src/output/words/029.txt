@@ -2141,7 +2141,7 @@ own
 own
 own
 own
-p>wait
+p
 page
 paint
 paint
@@ -3743,6 +3743,7 @@ view
 view
 view
 w
+wait
 wait
 wait
 was

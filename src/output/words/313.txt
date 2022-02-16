@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -405,8 +404,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 food
+footnotes
 for
 for
 for
@@ -719,6 +719,7 @@ other
 ownership
 ownership
 owning
+pages
 paper
 paper
 paper
@@ -776,7 +777,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 plans
 plans
@@ -798,6 +799,7 @@ prediction
 predictions
 present
 presentation
+price
 price
 price
 prices
@@ -906,7 +908,7 @@ s
 s
 s
 s
-s=sources
+s
 safety
 scenarios
 science
@@ -938,6 +940,7 @@ sold
 some
 some
 source
+sources
 sources
 specific
 splits
@@ -1189,6 +1192,7 @@ world
 would
 written
 xerox
+year
 yield
 yr
 yr
@@ -1228,4 +1232,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

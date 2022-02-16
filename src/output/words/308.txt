@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1205,7 +1204,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focuses
 focuses
@@ -1218,6 +1217,7 @@ following
 fool
 fool
 fool
+footnotes
 for
 for
 for
@@ -2354,6 +2354,7 @@ own
 own
 own
 own
+pages
 painful
 paper
 paper
@@ -2514,7 +2515,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phase
 philosophy
 piece
@@ -2597,6 +2598,7 @@ pre
 predominantly
 prejudices
 pretends
+price
 pride
 prince
 principal
@@ -2960,7 +2962,7 @@ s
 s
 s
 s
-s=sources
+s
 safety
 salesman
 salesman
@@ -3152,6 +3154,7 @@ soul
 souls
 souls
 source
+sources
 sources
 sources
 spanish
@@ -3937,6 +3940,7 @@ worldly
 worthy
 would
 written
+year
 yet
 york
 you
@@ -4069,4 +4073,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

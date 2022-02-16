@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -865,12 +864,13 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focuses
 focuses
 focusing
 focusing
+footnotes
 for
 for
 for
@@ -1563,6 +1563,7 @@ other
 outline
 overview
 ownership
+pages
 panned
 paper
 paper
@@ -1710,7 +1711,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomena
 philosophy
 philosophy
@@ -1743,6 +1744,7 @@ present
 press
 prevalent
 prevent
+price
 prices
 pricing
 private
@@ -2012,7 +2014,7 @@ s
 s
 s
 s
-s=sources
+s
 salaries
 salary
 salary
@@ -2089,6 +2091,7 @@ sociology
 solutions
 solutions
 some
+sources
 specific
 specific
 specific
@@ -2582,6 +2585,7 @@ written
 x
 y
 year
+year
 years
 york
 york
@@ -2674,7 +2678,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 yugoslavia
 zerox
 zerox

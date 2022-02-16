@@ -1,4 +1,3 @@
-=
 available
 available
 available
@@ -4658,7 +4657,7 @@ r
 r
 r
 r
-r=
+r
 radiation
 radiative
 ramage
@@ -7337,10 +7336,4 @@ zhu
 zonal
 zonal
 |r|
-|r|=
-~
-~
-~
-~
-~
-~
+|r|

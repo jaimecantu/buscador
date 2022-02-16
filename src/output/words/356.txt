@@ -1,6 +1,3 @@
-=wggg
->>
->>a
 szerk
 a
 ez
@@ -50,10 +47,12 @@ a
 a
 a
 a
+a
 aaaeealktqti
 aberranciajat
 acsurar
 afejuket
+akar
 akarok
 aki
 aki
@@ -94,7 +93,7 @@ az
 az
 az
 az
-az>>akar
+az
 azert
 azert
 azert
@@ -573,7 +572,7 @@ s
 s
 s
 sajtoszabadsag
-sandor=toprenges
+sandor
 sem
 sem
 semmi
@@ -640,6 +639,7 @@ tobbseg
 tobbseget
 tole
 tomtek
+toprenges
 torveny
 torveny
 torvenyeket
@@ -709,6 +709,7 @@ volt
 volta
 voltaztan
 way
+wggg
 www
 wwwpage
 wz

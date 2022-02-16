@@ -53,6 +53,7 @@ activities
 activities
 add
 addresses
+admark
 adoptee
 adoptees
 adoptees
@@ -188,10 +189,13 @@ ball
 ball
 ball
 ball
+bang
+banshee
 based
 bears
 bears
 bears
+bedford
 being
 being
 berit
@@ -204,6 +208,8 @@ birthday
 birthday
 bob
 bob
+boba
+boba
 book
 book
 books
@@ -246,6 +252,7 @@ canadian
 canadian
 candies
 carlos
+carlosp
 carroll
 cat
 catalog
@@ -263,6 +270,7 @@ child
 child
 child
 child
+children
 children
 children
 children
@@ -383,6 +391,7 @@ current
 cyberkid
 cyberkids
 cyberkids
+darsie
 davis
 day
 day
@@ -560,6 +569,7 @@ geography
 get
 glenn
 global
+gouge
 gov
 grade
 graphic
@@ -818,6 +828,7 @@ jwu
 k
 k
 k
+kelso
 keypal
 kid
 kid
@@ -939,6 +950,7 @@ lm
 locally
 long
 loosemore
+lowens
 lucky
 lucky
 macintosh
@@ -994,6 +1006,7 @@ mr
 ms
 mtlake
 multiauthor
+mvdlaan
 n
 n
 n
@@ -1017,6 +1030,7 @@ newsrel
 newspaper
 newspapers
 nl
+nneul
 non
 nonprofit
 now
@@ -1140,6 +1154,7 @@ own
 own
 own
 own
+pachecod
 page
 page
 page
@@ -1293,6 +1308,7 @@ rmii
 robot
 rocky
 rt
+rudolmc
 rules
 s
 s
@@ -1345,7 +1361,7 @@ scouting
 scouts
 scouts
 screen
-script=webyahtzee
+script
 searchable
 section
 sections
@@ -1366,6 +1382,7 @@ several
 shareware
 sharware
 shasta
+shelden
 shop
 short
 show
@@ -1432,6 +1449,7 @@ sunsite
 superhighway
 symbols
 t
+ta
 tc
 teach
 teachers
@@ -1583,7 +1601,7 @@ us
 usage
 use
 used
-user=nneul
+user
 users
 using
 using
@@ -1612,6 +1630,7 @@ web
 webfeats
 webmind
 webs
+webyahtzee
 week
 week
 welcome
@@ -1706,6 +1725,7 @@ www
 www
 www
 www
+wwwads
 wwwcgi
 wwwpublishing
 xmission
@@ -1733,21 +1753,3 @@ your
 your
 youth
 youth
-~admark
-~bang
-~banshee
-~bedford
-~boba
-~boba
-~carlosp
-~children
-~darsie
-~gouge
-~kelso
-~lowens
-~mvdlaan
-~pachecod
-~rudolmc
-~shelden
-~ta
-~wwwads

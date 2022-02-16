@@ -1,5 +1,4 @@
 and
-=price
 a
 a
 a
@@ -651,8 +650,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 folks
+footnotes
 for
 for
 for
@@ -1135,6 +1135,7 @@ other
 outside
 overview
 own
+pages
 paper
 paper
 paper
@@ -1216,7 +1217,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomenon
 philosopher
 philosophy
@@ -1234,6 +1235,7 @@ popular
 position
 power
 pretension
+price
 primarily
 problem
 problems
@@ -1411,7 +1413,7 @@ s
 s
 s
 s
-s=sources
+s
 saga
 saga
 same
@@ -1474,6 +1476,7 @@ song
 sonny
 soul
 soul
+sources
 south
 south
 soyenka
@@ -1875,6 +1878,7 @@ written
 wroght
 wrote
 x
+year
 young
 young
 young
@@ -1946,4 +1950,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

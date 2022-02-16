@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -240,9 +239,10 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 food
+footnotes
 for
 for
 for
@@ -431,6 +431,7 @@ or
 order
 other
 over
+pages
 pain
 paper
 paper
@@ -462,7 +463,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 pharmacist
 pharmacists
 pharmacists
@@ -488,6 +489,7 @@ pregnant
 prescription
 present
 presently
+price
 problems
 problems
 products
@@ -547,7 +549,7 @@ s
 s
 s
 s
-s=sources
+s
 scanner
 scanner
 science
@@ -563,6 +565,7 @@ situations
 society
 sociology
 solutions
+sources
 specific
 sperm
 sports
@@ -718,6 +721,7 @@ women
 women
 women
 written
+year
 yr
 yr
 yr
@@ -738,4 +742,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

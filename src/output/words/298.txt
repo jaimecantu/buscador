@@ -1,5 +1,4 @@
 and
-=price
 a
 a
 a
@@ -2096,13 +2095,14 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focuses
 focusing
 following
 foolish
+footnotes
 for
 for
 for
@@ -3765,6 +3765,7 @@ own
 own
 p
 p
+pages
 paine
 paper
 paper
@@ -3999,7 +4000,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomenon
 phillip
 philosophies
@@ -4102,6 +4103,7 @@ preoccupation
 presentation
 presented
 pressure
+price
 pride
 pride
 pride
@@ -4672,7 +4674,7 @@ s
 s
 s
 s
-s=sources
+s
 sad
 sailors
 salesman
@@ -4895,6 +4897,7 @@ soul
 soul
 soul
 sound
+sources
 south
 southeast
 space
@@ -6124,6 +6127,7 @@ wrote
 wuthering
 wuthering
 yankee
+year
 years
 yellow
 yossarian
@@ -6326,7 +6330,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zen
 zen
 zoroaster

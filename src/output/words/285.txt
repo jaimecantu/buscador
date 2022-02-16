@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -443,7 +442,8 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
+footnotes
 for
 for
 for
@@ -766,6 +766,7 @@ origins
 origins
 outbreak
 overtly
+pages
 paper
 paper
 paper
@@ -836,7 +837,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 physical
 pigs
@@ -883,6 +884,7 @@ power
 powers
 president
 president
+price
 prior
 producing
 progress
@@ -1029,7 +1031,7 @@ s
 s
 s
 s
-s=sources
+s
 san
 santa
 santo
@@ -1058,6 +1060,7 @@ social
 societal
 socio
 sociology
+sources
 south
 south
 south
@@ -1362,6 +1365,7 @@ women
 work
 world
 written
+year
 years
 yr
 yr
@@ -1408,4 +1412,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

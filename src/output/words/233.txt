@@ -1,5 +1,4 @@
 democracy
-=price
 a
 a
 a
@@ -617,7 +616,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focusing
@@ -625,6 +624,7 @@ focusing
 focusing
 following
 folly
+footnotes
 for
 for
 for
@@ -1187,6 +1187,7 @@ other
 outside
 over
 overview
+pages
 paper
 paper
 paper
@@ -1279,7 +1280,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomenon
 philosophy
 place
@@ -1347,6 +1348,7 @@ presidential
 presidential
 presidents
 prevent
+price
 price
 prime
 principle
@@ -1544,7 +1546,7 @@ s
 s
 s
 s
-s=sources
+s
 scandinavian
 science
 science
@@ -1591,6 +1593,7 @@ social
 society
 society
 sociology
+sources
 soviet
 soviet
 soviet
@@ -2036,6 +2039,7 @@ written
 wwii
 wwii
 wwii
+year
 years
 years
 yr
@@ -2091,7 +2095,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 yugoslav
 yugoslavia
 yugoslavia

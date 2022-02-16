@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -306,12 +305,13 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 following
 food
 food
 food
+footnotes
 for
 for
 for
@@ -536,6 +536,7 @@ order
 other
 output
 output
+pages
 paper
 paper
 paper
@@ -574,7 +575,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phillips
 phillips
 phillips
@@ -588,6 +589,7 @@ prediction
 present
 presentation
 presidential
+price
 prices
 pricing
 principals
@@ -678,7 +680,7 @@ s
 s
 s
 s
-s=sources
+s
 same
 science
 science
@@ -696,6 +698,7 @@ social
 social
 sociology
 solve
+sources
 specific
 sports
 stamp
@@ -875,6 +878,7 @@ world
 would
 written
 year
+year
 years
 yr
 yr
@@ -902,4 +906,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

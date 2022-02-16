@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -541,10 +540,11 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focusing
+footnotes
 for
 for
 for
@@ -919,6 +919,7 @@ outline
 over
 overall
 packages
+pages
 paid
 pantomime
 paper
@@ -985,7 +986,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomena
 philosophy
 piaget
@@ -1024,6 +1025,7 @@ presenting
 prevention
 prevention
 prevention
+price
 primary
 primary
 primary
@@ -1183,7 +1185,7 @@ s
 s
 s
 s
-s=sources
+s
 satisfaction
 school
 school
@@ -1253,6 +1255,7 @@ solution
 solution
 solving
 sound
+sources
 spanish
 speaking
 specific
@@ -1560,6 +1563,7 @@ worker
 written
 year
 year
+year
 years
 years
 young
@@ -1614,4 +1618,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

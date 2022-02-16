@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -102,10 +101,11 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 folk
 folk
 folk
+footnotes
 for
 forms
 free
@@ -199,6 +199,7 @@ or
 order
 origins
 origins
+pages
 paper
 paper
 paper
@@ -214,11 +215,12 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 political
 position
 presley
+price
 prior
 prominent
 prominent
@@ -243,7 +245,7 @@ s
 s
 s
 s
-s=sources
+s
 science
 science
 send
@@ -253,6 +255,7 @@ singer
 single
 sociology
 sounds
+sources
 specific
 spheres
 sports
@@ -322,6 +325,7 @@ with
 women
 work
 written
+year
 yr
 yr
 yr
@@ -330,4 +334,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

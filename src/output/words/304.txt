@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1938,7 +1937,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focuses
@@ -1958,6 +1957,7 @@ focusing
 focusing
 following
 folly
+footnotes
 for
 for
 for
@@ -3504,6 +3504,7 @@ own
 own
 own
 page
+pages
 paper
 paper
 paper
@@ -3734,7 +3735,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phaedra
 phaedra
 phaedra
@@ -3868,6 +3869,7 @@ present
 presentations
 pressure
 prevailing
+price
 pride
 pride
 prince
@@ -4357,7 +4359,7 @@ s
 s
 s
 s
-s=sources
+s
 saint
 salem
 salesman
@@ -4559,6 +4561,7 @@ sophocles
 sophocles
 sophocles
 soul
+sources
 spanning
 speaking
 special
@@ -5749,6 +5752,7 @@ written
 written
 written
 y
+year
 you
 you
 you
@@ -5942,5 +5946,5 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 

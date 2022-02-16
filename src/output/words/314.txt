@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -126,7 +125,8 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
+footnotes
 for
 for
 frequent
@@ -264,6 +264,7 @@ order
 origins
 our
 over
+pages
 paper
 paper
 paper
@@ -283,7 +284,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phila
 philadelphia
 philadelphia
@@ -297,6 +298,7 @@ press
 press
 press
 press
+price
 priests
 print
 print
@@ -349,7 +351,7 @@ s
 s
 s
 s
-s=sources
+s
 science
 science
 sector
@@ -366,6 +368,7 @@ socialization
 socioeconomic
 sociology
 source
+sources
 south
 southern
 space
@@ -472,6 +475,7 @@ with
 women
 women
 written
+year
 years
 york
 york
@@ -486,4 +490,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

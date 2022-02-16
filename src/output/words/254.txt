@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -405,8 +404,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
+footnotes
 for
 for
 for
@@ -709,6 +709,7 @@ order
 organizing
 other
 overview
+pages
 paper
 paper
 paper
@@ -760,7 +761,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 phonetic
 phonetics
@@ -777,6 +778,7 @@ pre
 preparing
 previous
 previous
+price
 problem
 problems
 procedure
@@ -958,7 +960,7 @@ s
 s
 s
 s
-s=sources
+s
 safeguards
 school
 school
@@ -992,6 +994,7 @@ slow
 sociology
 solution
 some
+sources
 spanish
 spanish
 specific
@@ -1267,6 +1270,7 @@ writing
 writing
 writing
 written
+year
 years
 yr
 yr
@@ -1310,4 +1314,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

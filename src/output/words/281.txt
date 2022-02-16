@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1195,7 +1194,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focusing
@@ -1203,6 +1202,7 @@ focusing
 focusing
 following
 foolishness
+footnotes
 for
 for
 for
@@ -2050,6 +2050,7 @@ over
 overview
 own
 owners
+pages
 panorama
 paper
 paper
@@ -2192,7 +2193,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philadelphia
 philosophical
 philosophical
@@ -2265,6 +2266,7 @@ prevalent
 prevent
 preventing
 preventing
+price
 primarily
 primary
 principles
@@ -2583,7 +2585,7 @@ s
 s
 s
 s
-s=sources
+s
 same
 scale
 scheer
@@ -2599,7 +2601,7 @@ second
 secretary
 see
 see
-self=
+self
 send
 seneca
 seneca
@@ -2658,6 +2660,7 @@ sociology
 somewhat
 sought
 souix
+sources
 south
 south
 south
@@ -3453,6 +3456,7 @@ writings
 written
 written
 written
+year
 years
 years
 york
@@ -3568,4 +3572,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

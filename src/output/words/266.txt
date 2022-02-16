@@ -1,5 +1,4 @@
 addiction
-=price
 a
 a
 a
@@ -838,9 +837,10 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focusing
+footnotes
 for
 for
 for
@@ -1316,6 +1316,7 @@ over
 overview
 overview
 p
+pages
 paper
 paper
 paper
@@ -1398,7 +1399,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 physical
 physical
@@ -1434,6 +1435,7 @@ prevention
 prevention
 prevention
 prevention
+price
 problem
 problem
 problem
@@ -1604,7 +1606,7 @@ s
 s
 s
 s
-s=sources
+s
 same
 same
 san
@@ -1662,6 +1664,7 @@ sociology
 solution
 solutions
 sound
+sources
 soviet
 soviet
 species
@@ -2085,6 +2088,7 @@ workplace
 workplace
 written
 written
+year
 york
 york
 young
@@ -2151,4 +2155,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

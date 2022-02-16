@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -374,8 +373,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 food
+footnotes
 for
 for
 for
@@ -617,6 +617,7 @@ other
 other
 overview
 overview
+pages
 pan
 paper
 paper
@@ -664,7 +665,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phases
 philosophy
 picture
@@ -690,6 +691,7 @@ practices
 practices
 present
 prevalent
+price
 price
 price
 prices
@@ -776,7 +778,7 @@ s
 s
 s
 s
-s=sources
+s
 sales
 science
 science
@@ -798,6 +800,7 @@ small
 smallest
 smith
 sociology
+sources
 south
 specific
 sports
@@ -974,6 +977,7 @@ world
 written
 year
 year
+year
 yield
 york
 yr
@@ -1010,4 +1014,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

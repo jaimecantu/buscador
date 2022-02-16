@@ -1,5 +1,4 @@
 an
-=price
 a
 a
 a
@@ -190,8 +189,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focusing
+footnotes
 forms
 forms
 forms
@@ -365,6 +365,7 @@ oriental
 orientation
 origins
 padua
+pages
 painting
 paper
 paper
@@ -390,7 +391,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philip
 philosophers
 philosophic
@@ -410,6 +411,7 @@ poles
 political
 practical
 practices
+price
 process
 psychology
 question
@@ -447,7 +449,7 @@ s
 s
 s
 s
-s=sources
+s
 samkara
 school
 science
@@ -462,6 +464,7 @@ sikkum
 similarities
 social
 sociology
+sources
 specific
 sports
 start
@@ -617,6 +620,7 @@ work
 writing
 writings
 written
+year
 yoga
 yoga
 yoga
@@ -636,7 +640,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zen
 zen
 zen

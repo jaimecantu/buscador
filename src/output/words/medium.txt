@@ -1,4 +1,3 @@
-<
 another
 are
 big
@@ -24,6 +23,7 @@ number
 punctuation
 sentences
 sgauch
+sgauch
 small
 some
 test
@@ -37,4 +37,3 @@ uark
 uark
 www
 x
-~sgauch

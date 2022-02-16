@@ -1,5 +1,4 @@
 a
-=price
 a
 a
 a
@@ -1501,12 +1500,13 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focusing
 focusing
 focusing
 food
+footnotes
 for
 for
 for
@@ -2801,6 +2801,7 @@ overview
 overview
 overview
 owners
+pages
 palton
 pan
 pants
@@ -3004,7 +3005,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phase
 philosophy
 philosophy
@@ -3086,6 +3087,7 @@ president
 president
 presto
 prevalent
+price
 primarily
 primary
 principles
@@ -3542,7 +3544,7 @@ s
 s
 s
 s
-s=sources
+s
 salaries
 sales
 sales
@@ -3653,6 +3655,7 @@ solving
 some
 some
 some
+sources
 sources
 sources
 sources
@@ -4430,6 +4433,7 @@ written
 wrong
 x
 y
+year
 you
 yr
 yr
@@ -4584,7 +4588,7 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 z
 z
 z

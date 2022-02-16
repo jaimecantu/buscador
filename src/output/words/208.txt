@@ -66,7 +66,7 @@ black
 blue
 blue
 blue
-blue=chh
+blue
 boreal
 both
 boundary
@@ -88,6 +88,7 @@ chance
 change
 changes
 chapman
+chh
 clear
 climatic
 cloud
@@ -138,7 +139,7 @@ global
 global
 gov
 grass
-green=lhv
+green
 greenish
 greenish
 hardwoods
@@ -196,6 +197,8 @@ large
 large
 latitude
 left
+lhh
+lhv
 light
 light
 line
@@ -269,7 +272,7 @@ radar
 radar
 recent
 red
-red=lhh
+red
 regional
 related
 related

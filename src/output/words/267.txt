@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -642,10 +641,11 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 follow
 food
+footnotes
 for
 for
 for
@@ -1287,6 +1287,7 @@ overall
 overview
 overview
 own
+pages
 paper
 paper
 paper
@@ -1378,7 +1379,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phd
 phila
 philosophies
@@ -1428,6 +1429,7 @@ present
 present
 presents
 prevention
+price
 primary
 principles
 principles
@@ -1624,7 +1626,7 @@ s
 s
 s
 s
-s=sources
+s
 salber
 saving
 scarcity
@@ -1682,6 +1684,7 @@ sociology
 solution
 solutions
 some
+sources
 special
 specialized
 specific
@@ -2053,6 +2056,7 @@ written
 written
 wrong
 y
+year
 york
 yr
 yr
@@ -2117,5 +2121,5 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zero

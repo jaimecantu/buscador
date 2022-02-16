@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -133,8 +132,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 followers
+footnotes
 future
 future
 general
@@ -224,6 +224,7 @@ other
 outlook
 overcoming
 overview
+pages
 paper
 paper
 paper
@@ -245,13 +246,14 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 plight
 political
 postmaster
 practice
 present
+price
 problems
 programs
 programs
@@ -293,7 +295,7 @@ s
 s
 s
 s
-s=sources
+s
 safety
 science
 science
@@ -302,6 +304,7 @@ serves
 several
 shakespeare
 sociology
+sources
 specific
 sports
 start
@@ -388,6 +391,7 @@ with
 women
 workforce
 written
+year
 yr
 yr
 yr
@@ -397,4 +401,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

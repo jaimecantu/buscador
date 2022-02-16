@@ -448,6 +448,7 @@ neglected
 never
 new
 newspapers
+non
 not
 not
 not
@@ -530,10 +531,10 @@ personal
 pets
 phoenix
 photo
+pi
 picture
 piece
 pieces
-pi~non
 placed
 play
 players

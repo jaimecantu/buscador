@@ -18,7 +18,7 @@ address
 address
 address
 adgbn
-admd=ati
+admd
 aes
 africa
 agency
@@ -84,6 +84,7 @@ at
 at
 at
 at
+ati
 atm
 atmos
 atmos
@@ -196,7 +197,7 @@ c
 c
 c
 c
-c=jp
+c
 ca
 ca
 ca
@@ -795,9 +796,11 @@ jersey
 jet
 jma
 jma
+jma
 john
 john
 jones
+jp
 jp
 jp
 jp
@@ -986,6 +989,7 @@ ms
 msk
 msk
 mwehner
+n
 n
 nagamine
 nasa
@@ -1395,7 +1399,7 @@ o
 o
 o
 o
-o=jma
+o
 oak
 observatory
 observatory
@@ -1507,7 +1511,7 @@ phzhevsky
 pichat
 planck
 planetary
-pn=n
+pn
 polcher
 polcher
 polytechnique

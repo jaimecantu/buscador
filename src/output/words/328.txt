@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -785,11 +784,12 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focusing
 focusing
 followed
 following
+footnotes
 for
 for
 for
@@ -1694,6 +1694,7 @@ outlined
 over
 own
 pages
+pages
 paper
 paper
 paper
@@ -1799,7 +1800,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomenology
 phenomenology
 phenomenology
@@ -1880,6 +1881,7 @@ power
 preoccupation
 presentation
 presented
+price
 primarily
 primitive
 prince
@@ -2185,7 +2187,7 @@ s
 s
 s
 s
-s=sources
+s
 sacrificed
 sartre
 sartre
@@ -2259,6 +2261,7 @@ sociology
 some
 some
 somewhat
+sources
 specific
 specifically
 speech
@@ -2786,6 +2789,7 @@ writings
 writings
 written
 written
+year
 yr
 yr
 yr
@@ -2871,4 +2875,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

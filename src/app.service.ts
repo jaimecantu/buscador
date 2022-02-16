@@ -24,8 +24,6 @@ export class AppService {
       file: file,
     };
 
-    //fs.writeFileSync('./src/output/logs/act-1.txt', `${name}.html \t \t${end-start} ms`)
-
     let log = `\n${name}.html\t\t\t\t${end - start} ms`;
     fs.appendFile("./src/output/logs/act-1.txt", log, (err) => {
       return { error: "Error al actualizar los logs" };
@@ -43,7 +41,7 @@ export class AppService {
 
       //Paso 2: Crear el archivo con el reporte de los totales
       fs.writeFileSync(
-        "./src/output/logs/total.txt",
+        "./src/output/logs/act-1-total.txt",
         `Archivo\t\t\t\t\tTiempo\n-----------------------------------`
       );
 
@@ -54,7 +52,6 @@ export class AppService {
       await files.forEach((name) => {
         let start = Date.now();
         let end;
-        let response = {};
         let file;
         try {
           file = fs.readFileSync(`./src/files/${name}`, "utf-8");
@@ -64,7 +61,7 @@ export class AppService {
         end = Date.now();
         let log = `\n${name}\t\t\t\t${end - start} ms`;
         totalTime += end - start;
-        fs.appendFile("./src/output/logs/total.txt", log, (err) => {
+        fs.appendFile("./src/output/logs/act-1-total.txt", log, (err) => {
           return { error: "Error al actualizar los logs" };
         });
       });
@@ -73,7 +70,7 @@ export class AppService {
 
       //Paso 4: Agregar totales al reporte
       fs.appendFile(
-        "./src/output/logs/total.txt",
+        "./src/output/logs/act-1-total.txt",
         `\n-----------------------------------\n${totalFiles} archivos\t\t\t${totalTime} ms`,
         (err) => {
           return { error: "Error al actualizar los logs" };
@@ -176,7 +173,6 @@ export class AppService {
       let totalFiles = files.length;
 
       await files.forEach(async (name) => {
-        //console.log(name);
         if (name != ".DS_Store") {
           let start = Date.now();
           let end;
@@ -190,7 +186,7 @@ export class AppService {
           //Paso 2. Guardar las palabras en un arreglo, separando el string cada " "
           let parsedFile = file
             .trim()
-            .replace(/[\t\r\n\"-.,:;?@!$#-%&¿¡()/0123456789]+/gm, " ");
+            .replace(/[\t\r\n\"-.,:;?@!$#-%&¿¡=<>~()/0123456789]+/gm, " ");
           let lowerCase = parsedFile.toLowerCase();
           let wordArray = lowerCase.split(" ");
 
@@ -199,11 +195,10 @@ export class AppService {
           // Tomamos la fecha final de cada archivo
           end = Date.now();
 
-          //console.log(name + end);
           let fileString = "";
           try {
             await sortedWords.forEach(async (word) => {
-              let sanitized = word.replace(/[\`\[\]\_\-]/g, "");
+              let sanitized = word.replace(/[\`\[\]\_\-\{\}]/g, "");
               if (sanitized.trim().length > 0) {
                 fileString += `${sanitized}\n`;
               }
@@ -216,7 +211,7 @@ export class AppService {
           }
           //4. Al terminar, agregar al log act-3.txt el nombre y tiempo de cada archivo
           let log = `\n${name}\t\t\t\t${end - start} ms`;
-          //totalTime += end - start;
+
           await delay(500);
           await fs.appendFile("./src/output/logs/act-3.txt", log, (err) => {
             if (err) {

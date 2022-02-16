@@ -1,5 +1,4 @@
 more
-=price
 a
 a
 a
@@ -819,10 +818,11 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 follows
+footnotes
 for
 for
 for
@@ -1078,7 +1078,8 @@ its
 its
 j
 j
-j>j
+j
+j
 jacques
 james
 japanese
@@ -1524,6 +1525,7 @@ own
 own
 own
 pacificism
+pages
 paper
 paper
 paper
@@ -1634,7 +1636,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phaedras
 phenomena
 phenomenom
@@ -1743,6 +1745,7 @@ present
 presents
 preston
 presumed
+price
 principle
 principles
 priori
@@ -1968,7 +1971,7 @@ s
 s
 s
 s
-s=sources
+s
 same
 sanity
 sartre
@@ -2026,6 +2029,7 @@ something
 sometimes
 sophocles
 soul
+sources
 specific
 specific
 spinoza
@@ -2539,6 +2543,7 @@ written
 written
 wrong
 wuorio
+year
 yr
 yr
 yr
@@ -2617,6 +2622,6 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 z
 zaborra

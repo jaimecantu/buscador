@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -1874,7 +1873,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focus
 focuses
@@ -1882,6 +1881,7 @@ focuses
 focusing
 focusing
 foil
+footnotes
 for
 for
 for
@@ -3368,6 +3368,7 @@ overtones
 overtones
 overtones
 overview
+pages
 pain
 paper
 paper
@@ -3610,7 +3611,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomena
 philosophies
 philosophies
@@ -3683,6 +3684,7 @@ prejudice
 present
 presented
 prevailing
+price
 pride
 pride
 pride
@@ -4131,7 +4133,7 @@ s
 s
 s
 s
-s=sources
+s
 sacrifice
 saga
 salvation
@@ -4301,6 +4303,7 @@ sons
 sons
 sons
 soothing
+sources
 specific
 spirits
 spiritual
@@ -5342,6 +5345,7 @@ wuthering
 wuthering
 wuthering
 wuthering
+year
 yossarian
 young
 young
@@ -5541,4 +5545,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

@@ -807,7 +807,7 @@ review
 review
 richard
 rogue
-ruddy>
+ruddy
 russia
 russia
 russian
@@ -1127,6 +1127,7 @@ with
 with
 with
 without
+wmcguire
 wondering
 would
 wrote
@@ -1137,4 +1138,3 @@ years
 years
 york
 you
-~wmcguire

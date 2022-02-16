@@ -1,5 +1,4 @@
 also
-=price
 a
 a
 a
@@ -2098,7 +2097,7 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focuses
 focuses
 focuses
@@ -2106,6 +2105,7 @@ focuses
 following
 following
 following
+footnotes
 for
 for
 for
@@ -3801,6 +3801,7 @@ overview
 own
 p
 page
+pages
 pain
 paper
 paper
@@ -4052,7 +4053,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philadelphia
 philadelphia
 philadelphia
@@ -4163,6 +4164,7 @@ pressure
 prevelant
 preventative
 preventing
+price
 pride
 primitive
 principled
@@ -4804,7 +4806,7 @@ s
 s
 s
 s
-s=sources
+s
 salmon
 sanctions
 sandra
@@ -4970,6 +4972,7 @@ some
 some
 sometimes
 son
+sources
 sovereign
 sovereignities
 speakers
@@ -6224,6 +6227,7 @@ wrongful
 wrongful
 wrongfully
 x
+year
 years
 years
 york
@@ -6430,6 +6434,6 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zenger
 zenger

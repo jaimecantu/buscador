@@ -1,5 +1,4 @@
 a
-=price
 a
 a
 a
@@ -1307,9 +1306,10 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focus
 focusing
+footnotes
 for
 for
 for
@@ -2285,6 +2285,7 @@ overlooked
 overruns
 overview
 overview
+pages
 panther
 paper
 paper
@@ -2454,7 +2455,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 phenomena
 phenomenon
 phenomenon
@@ -2608,6 +2609,7 @@ presidents
 press
 pressure
 prestige
+price
 primary
 prime
 prior
@@ -2971,7 +2973,7 @@ s
 s
 s
 s
-s=sources
+s
 salient
 same
 same
@@ -3057,6 +3059,7 @@ solving
 some
 some
 somewhat
+sources
 south
 south
 south
@@ -3863,6 +3866,7 @@ world
 would
 written
 wrong
+year
 years
 years
 years
@@ -3990,5 +3994,5 @@ yr
 yr
 yr
 yr
-yr=year
+yr
 zone

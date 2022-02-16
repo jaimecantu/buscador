@@ -1,5 +1,4 @@
 and
-=price
 a
 a
 a
@@ -526,8 +525,9 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focusing
+footnotes
 for
 for
 for
@@ -929,6 +929,7 @@ over
 over
 over
 overview
+pages
 paper
 paper
 paper
@@ -998,7 +999,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophical
 philosophy
 pipe
@@ -1018,6 +1019,7 @@ precedents
 presented
 president
 previous
+price
 primary
 procedures
 process
@@ -1176,7 +1178,7 @@ s
 s
 s
 s
-s=sources
+s
 safety
 safety
 sales
@@ -1205,6 +1207,7 @@ software
 software
 solution
 sonderling
+sources
 sovereignty
 special
 specific
@@ -1465,6 +1468,7 @@ workers
 workers
 writers
 written
+year
 york
 york
 york
@@ -1518,4 +1522,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr

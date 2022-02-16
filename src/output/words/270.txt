@@ -1,4 +1,3 @@
-=price
 a
 a
 a
@@ -315,9 +314,10 @@ fn
 fn
 fn
 fn
-fn=footnotes
+fn
 focusing
 focusing
+footnotes
 for
 for
 for
@@ -627,6 +627,7 @@ outside
 over
 overall
 overview
+pages
 pain
 paper
 paper
@@ -687,7 +688,7 @@ pgs
 pgs
 pgs
 pgs
-pgs=pages
+pgs
 philosophy
 philosophy
 philosophy
@@ -704,6 +705,7 @@ pre
 prevent
 preventative
 preventative
+price
 prices
 prior
 problems
@@ -795,7 +797,7 @@ s
 s
 s
 s
-s=sources
+s
 safety
 science
 science
@@ -819,6 +821,7 @@ social
 social
 sociology
 sociology
+sources
 southern
 special
 specific
@@ -1054,6 +1057,7 @@ work
 work
 work
 written
+year
 york
 york
 york
@@ -1089,4 +1093,4 @@ yr
 yr
 yr
 yr
-yr=year
+yr
