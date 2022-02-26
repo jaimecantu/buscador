@@ -297,10 +297,3 @@ with
 world
 you
 you
-|
-|
-|
-|
-|
-|
-|

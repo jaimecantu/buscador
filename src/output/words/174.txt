@@ -104,8 +104,8 @@ branch
 branch
 branch
 branch
-broken�
-broken�
+broken
+broken
 brought
 but
 but
@@ -185,7 +185,7 @@ for
 for
 forced
 forces
-force�s
+forces
 formal
 founded
 free
@@ -195,7 +195,7 @@ gave
 gendarmerie
 general
 genitals
-genitals�
+genitals
 great
 greater
 gross
@@ -222,6 +222,7 @@ he
 he
 he
 headquarters
+hello
 high
 highlighting
 him
@@ -245,6 +246,7 @@ human
 human
 human
 hung
+i
 i
 i
 i
@@ -448,7 +450,7 @@ rights
 risk
 risk
 risks
-room�
+room
 say
 section
 security
@@ -571,6 +573,7 @@ torture
 torture
 torture
 torture
+torture
 tortured
 torturers
 torturers
@@ -643,6 +646,3 @@ your
 your
 your
 your
-�hello�
-�i
-�torture

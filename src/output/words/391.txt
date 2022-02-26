@@ -335,8 +335,8 @@ assigned
 assigning
 assignment
 assignment
-assistance�chicago
-assistance�springfield
+assistancechicago
+assistancespringfield
 assumed
 assumed
 assumed

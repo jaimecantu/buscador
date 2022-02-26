@@ -24,4 +24,9 @@ export class AppController {
   words() {
     return this.appService.words();
   }
+
+  @Get('process/consolidate')
+  consolidated() {
+    return this.appService.consolidate();
+  }
 }

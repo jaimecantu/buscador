@@ -437,9 +437,3 @@ year
 years
 years
 york
-|
-|
-|
-|
-|
-|

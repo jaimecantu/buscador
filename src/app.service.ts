@@ -3,6 +3,7 @@ const fs = require("fs");
 const date = require("date-and-time");
 var striptags = require("striptags");
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+const write = require("write-file-utf8");
 @Injectable()
 export class AppService {
   async readFile(name: string) {
@@ -179,6 +180,7 @@ export class AppService {
           let file;
           try {
             file = fs.readFileSync(`./src/output/parsed/${name}`, "utf-8");
+            file = file.replace(/[^\x00-\x7F]/g, "");
           } catch (err) {
             console.log("Archivo no encontrado. " + name);
           }
@@ -198,12 +200,13 @@ export class AppService {
           let fileString = "";
           try {
             await sortedWords.forEach(async (word) => {
-              let sanitized = word.replace(/[\`\[\]\_\-\{\}]/g, "");
+              let sanitized = word.replace(/[\`\[\]\_\|\-\{\}\\]/g, "");
+              
               if (sanitized.trim().length > 0) {
                 fileString += `${sanitized}\n`;
               }
             });
-            fs.writeFileSync(`src/output/words/${name}`, fileString);
+            fs.writeFileSync(`./src/output/words/${name}`, fileString);
             await delay(500);
           } catch (error) {
             console.log("Error al crear el archivo " + name);
@@ -245,5 +248,105 @@ export class AppService {
 
       return { message: "Palabras guardadas exitosamente" };
     });
+  }
+
+  async consolidate() {
+    //1. Obtener todos los nombres de los archivos
+    await fs.readdir("./src/output/words", async (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+
+      let totalFiles = files.length;
+
+      //2. Crear el archivo consolidado y el log
+      fs.writeFileSync(
+        "./src/output/logs/act-4.txt",
+        `Archivo\t\t\t\t\tTiempo\n-----------------------------------`
+      );
+
+      let totalString = "";
+
+      //2.1 Iniciar la medición del tiempo total
+      const totalStart = Date.now();
+
+      //3. Agregar el contenido de cada archivo al consolidado
+      await files.forEach(async (name) => {
+        if (name != ".DS_Store") {
+          let start = Date.now();
+          let end;
+          let file;
+          try {
+            file = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
+          } catch (err) {
+            return { error: "Archivo no encontrado" };
+          }
+
+          totalString += `\n${file}`;
+
+          //3.1 Medir el tiempo de cada archivo y agregarlo al log
+          end = Date.now();
+          let log = `\n${name}\t\t\t\t${end - start} ms`;
+          fs.appendFile("./src/output/logs/act-4.txt", log, (err) => {
+            if (err) console.log("Error al actualizar los logs - " + name);
+          });
+          await delay(1000);
+        } else {
+          totalFiles--;
+        }
+      });
+
+      fs.writeFileSync("./src/output/consolidated.txt", totalString);
+
+      //4. Al finalizar, obtener el tiempo total para la creación del archivo consilidado
+      // y agregarlo al log
+      let consolidatedEnd = Date.now() - totalStart;
+      await delay(1000);
+      fs.appendFile(
+        "./src/output/logs/act-4.txt",
+        `\n-----------------------------------\n${totalFiles} archivos\t\t\t${consolidatedEnd} ms`,
+        (err) => {
+          if (err) console.log("Error al actualizar los logs 2 - ");
+        }
+      );
+
+      await delay(500);
+
+      //5. Ordenar alfabéticamente el archivo consolidado
+      let consolidated;
+      try {
+        consolidated = fs.readFileSync(
+          `./src/output/consolidated.txt`,
+          "utf-8"
+        );
+        //let sanitized = consolidated.replace(/[\x00-\x08\x0E-\x1F\x7F-\uFFFF]/g,"");
+        let sanitized = consolidated.replace(/[^A-Za-z0-9\n\r]/g, "");
+        let escaped = sanitized.replace(/^\s*[\r\n]/gm, "");
+        let wordArray = await escaped.split(/\r?\n/);
+        console.log("Total de palabras: " + wordArray.length);
+        let sortedWords = await wordArray.sort();
+        sortedWords.shift();
+        let consolidatedString = await sortedWords.join(`\r\n`);
+
+        fs.writeFileSync(
+          "./src/output/sortedConsolidated.txt",
+          consolidatedString
+        );
+      } catch (err) {
+        console.log("Archivo consolidado no encontrado");
+      }
+
+      //6. Guardar el tiempo total de ejecución en el log
+      let totalTime = Date.now() - totalStart;
+      fs.appendFile(
+        "./src/output/logs/act-4.txt",
+        `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`,
+        (err) => {
+          if (err) console.log("Error al actualizar los logs 3");
+        }
+      );
+    });
+
+    return { message: "Archivo consolidado creado exitosamente" };
   }
 }

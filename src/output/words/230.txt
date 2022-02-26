@@ -325,7 +325,7 @@ lawyer
 lead
 less
 less
-let�s
+lets
 line
 lives
 long
@@ -511,6 +511,7 @@ sides
 similar
 since
 sit
+sixty
 society
 some
 some
@@ -749,5 +750,3 @@ your
 your
 your
 yours
-�
-�sixty

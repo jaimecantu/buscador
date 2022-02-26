@@ -1,4 +1,3 @@
-|
 a
 a
 a
@@ -407,12 +406,4 @@ wrote
 year
 years
 years
-|
-|
-|
-|
-|
-|
-|
-|copyright
-||
+copyright

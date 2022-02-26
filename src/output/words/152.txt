@@ -351,7 +351,7 @@ appears
 applications
 applications
 apprentice
-approach�
+approach
 arcano
 arch
 architect
@@ -1822,6 +1822,8 @@ manager
 manager
 manoa
 manoa
+manoa
+manoa
 mantel
 manufacturing
 many
@@ -1858,8 +1860,6 @@ maui
 mavrothalassitis
 max
 maxwell
-ma�noa
-ma�noa
 mcdonald
 mckinley
 media
@@ -2266,6 +2266,7 @@ pianist
 pianist
 piano
 piano
+plain
 planetarium
 planetarium
 planetarium
@@ -2710,7 +2711,7 @@ takano
 takata
 takazawa
 talented
-talk�
+talk
 tani
 tanielu
 taste
@@ -3162,4 +3163,3 @@ you
 you
 zen
 zoology
-�plain

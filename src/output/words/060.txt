@@ -67,7 +67,7 @@ ca
 ca
 camera
 camera
-can�t
+cant
 capabilities
 capable
 carlos
@@ -89,9 +89,9 @@ commands
 commands
 company
 company
-company�s
-company�s
-company�s
+companys
+companys
+companys
 complain
 completed
 comprised
@@ -130,8 +130,8 @@ devices
 devices
 do
 does
-doesn�t
-doesn�t
+doesnt
+doesnt
 dr
 dr
 duplicate
@@ -192,6 +192,7 @@ http
 i
 i
 ideal
+im
 immediate
 immediate
 improve
@@ -232,8 +233,7 @@ it
 it
 it
 its
-it�s
-i�m
+its
 key
 laparoscope
 launches
@@ -267,7 +267,7 @@ motion
 motion
 motion
 motion
-motion�s
+motions
 nation
 nd
 new
@@ -336,7 +336,7 @@ robotics
 robotics
 robotics
 robots
-robot�s
+robots
 room
 room
 s
@@ -365,8 +365,8 @@ surgeon
 surgeons
 surgeons
 surgeons
-surgeons�
-surgeon�s
+surgeons
+surgeons
 surgeries
 surgery
 surgery
@@ -469,15 +469,9 @@ worked
 worked
 world
 world
-world�s
-world�s
+worlds
+worlds
 www
 years
 you
 yulun
-|
-|
-|
-|
-|
-|

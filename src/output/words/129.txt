@@ -71,8 +71,8 @@ data
 discuss
 do
 dollar
-don�t
-don�t
+dont
+dont
 educate
 educational
 educational
@@ -164,7 +164,7 @@ machine
 market
 market
 mascot
-mater�s
+maters
 maybe
 media
 media
@@ -285,7 +285,7 @@ the
 them
 these
 they
-they�re
+theyre
 this
 this
 this
@@ -328,7 +328,7 @@ visit
 visit
 wants
 weddings
-what�s
+whats
 who
 who
 who
@@ -340,6 +340,7 @@ ya
 yes
 you
 you
+youll
 your
 your
 your
@@ -348,5 +349,4 @@ your
 your
 your
 your
-you�ll
-you�re
+youre

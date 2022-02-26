@@ -65,7 +65,7 @@ claudia
 co
 co
 coincide
-comun�quese
+comunquese
 con
 con
 controle
@@ -139,7 +139,7 @@ mega
 mega
 mismo
 moriello
-m�s
+ms
 n
 n
 nbsp
@@ -147,7 +147,7 @@ nbsp
 nbsp
 nbsp
 nbsp
-n�meros
+nmeros
 ochoa
 omar
 patricia
@@ -166,6 +166,7 @@ si
 silvana
 silvana
 silvia
+smese
 son
 sticker
 sticker
@@ -190,11 +191,10 @@ sticker
 sticker
 sticker
 su
-s�mese
 tadeo
 tamier
 thelma
-todav�a
+todava
 v
 w
 y

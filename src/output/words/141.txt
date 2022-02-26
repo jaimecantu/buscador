@@ -139,6 +139,7 @@ bodies
 bodies
 body
 body
+body
 book
 boys
 breathing
@@ -157,7 +158,7 @@ by
 by
 call
 called
-calls�
+calls
 camps
 can
 can
@@ -218,8 +219,8 @@ children
 children
 children
 children
-children�s
-children�s
+childrens
+childrens
 circumstances
 comic
 communication
@@ -362,7 +363,7 @@ have
 have
 have
 have
-haven�t
+havent
 healing
 healing
 healing
@@ -388,6 +389,7 @@ hospitals
 hospitals
 hospitals
 hospitals
+house
 how
 how
 how
@@ -651,11 +653,12 @@ power
 power
 power
 power
+power
+power
+power
 powerful
 powers
 powers
-power�
-power�
 practical
 prepared
 printed
@@ -683,7 +686,7 @@ promotes
 proud
 quality
 questions
-questions�
+questions
 quick
 races
 rapidly
@@ -725,7 +728,7 @@ robots
 robots
 robots
 robots
-robot�s
+robots
 rooms
 s
 s
@@ -796,12 +799,15 @@ super
 super
 super
 super
+super
+super
+super
 support
 systems
 t
 t
 take
-talk�
+talk
 taught
 teach
 teach
@@ -978,7 +984,7 @@ very
 victim
 video
 views
-vision�
+vision
 visit
 visit
 visiting
@@ -1043,7 +1049,7 @@ with
 with
 within
 within
-won�t
+wont
 words
 year
 year
@@ -1058,9 +1064,3 @@ young
 young
 young
 your
-�body
-�house
-�power
-�super
-�super
-�super
