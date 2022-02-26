@@ -29,4 +29,9 @@ export class AppController {
   consolidated() {
     return this.appService.consolidate();
   }
+
+  @Get('process/tokenize')
+  tokenize() {
+    return this.appService.tokenize();
+  }
 }

@@ -349,4 +349,51 @@ export class AppService {
 
     return { message: "Archivo consolidado creado exitosamente" };
   }
+
+  async tokenize(){
+    const files = ['simple', 'medium', 'hard', '049'];
+    let response = [];
+    let consolidated = {};
+
+    //1. Abrir cada uno de los archivos especificados
+    files.forEach(name => {
+      try {
+        let file = fs.readFileSync(`./src/output/words/${name}.txt`, 'utf-8');
+        //2. Generar un arreglo a partir de las palabras del archivo
+        let sanitized = file.replace(/[^A-Za-z0-9\n\r]/g, "");
+        let escaped = sanitized.replace(/^\s*[\r\n]/gm, "");
+        let wordArray = escaped.split(/\r?\n/);
+        console.log("Total de palabras en " + name + ": " + wordArray.length);
+
+        //3. Ordenar alfabéticamente
+        let sortedWords = wordArray.sort();
+
+        //4. Contabilizar las palabras repetidas
+        let counter = {};
+        sortedWords.forEach(word => {
+          if(word.length > 0){
+          counter[word] = (counter[word] || 0) + 1;
+          consolidated[word] = (consolidated[word] || 0) + 1;
+          }
+        });
+
+        //5. Crear el archivo de salida
+        let json = JSON.stringify(counter);
+        fs.writeFileSync(`./src/output/tokenized/${name}.json`, json);
+
+        response.push({file: name, counter});
+      } catch (err) {
+        console.log("Archivo no encontrado: " + name);
+        console.log(err);
+      }
+    });
+    console.log("Total de palabras: " + Object.keys(consolidated).length )
+
+    //6. Crear archivo consolidado
+    let consolidatedJson = JSON.stringify(consolidated);
+    fs.writeFileSync('./src/output/tokenized/consolidated.json', consolidatedJson);
+
+    response.push({file: 'consolidated', consolidated});
+    return response;
+  }
 }
