@@ -355,9 +355,17 @@ export class AppService {
     let response = [];
     let consolidated = {};
 
+    //0. Crear archivo con el log y tomar medición del tiempo
+    let totalStart = Date.now();
+    fs.writeFileSync(
+      "./src/output/logs/act-5.txt",
+      `Archivo\t\t\t\t\tTiempo\n-----------------------------------`
+    );
+
     //1. Abrir cada uno de los archivos especificados
     files.forEach(name => {
       try {
+        let start = Date.now();
         let file = fs.readFileSync(`./src/output/words/${name}.txt`, 'utf-8');
         //2. Generar un arreglo a partir de las palabras del archivo
         let sanitized = file.replace(/[^A-Za-z0-9\n\r]/g, "");
@@ -379,7 +387,16 @@ export class AppService {
 
         //5. Crear el archivo de salida
         let json = JSON.stringify(counter);
-        fs.writeFileSync(`./src/output/tokenized/${name}.json`, json);
+        let parsed = json.replace(/[\{\}\"]/gm, "");
+        let report = parsed.replace(/[\,]/gm, "\n");
+        fs.writeFileSync(`./src/output/tokenized/${name}.txt`, report);
+
+        //6. Actualizar log
+        let end = Date.now();
+        let log = `\n${name}.html\t\t\t\t${end - start} ms`;
+        fs.appendFile("./src/output/logs/act-5.txt", log, (err) => {
+          return { error: "Error al actualizar los logs" };
+        });
 
         response.push({file: name, counter});
       } catch (err) {
@@ -389,10 +406,21 @@ export class AppService {
     });
     console.log("Total de palabras: " + Object.keys(consolidated).length )
 
-    //6. Crear archivo consolidado
+    //7. Crear archivo consolidado
     let consolidatedJson = JSON.stringify(consolidated);
-    fs.writeFileSync('./src/output/tokenized/consolidated.json', consolidatedJson);
+    let parsed = consolidatedJson.replace(/[\{\}\"]/gm, "");
+    let report = parsed.replace(/[\,]/gm, "\n");
+    fs.writeFileSync('./src/output/tokenized/consolidated.txt', report);
 
+    //8. Actualizar log
+    let totalTime = Date.now() - totalStart;
+    fs.appendFile(
+      "./src/output/logs/act-5.txt",
+      `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`,
+      (err) => {
+        if (err) console.log("Error al actualizar los logs 3");
+      }
+    );
     response.push({file: 'consolidated', consolidated});
     return response;
   }
