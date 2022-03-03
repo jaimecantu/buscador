@@ -10,28 +10,33 @@ export class AppController {
     return this.appService.readAll();
   }
 
-  @Get(':name')
+  @Get(":name")
   readFile(@Param("name") name: string) {
     return this.appService.readFile(name);
   }
 
-  @Get('remove/tags')
+  @Get("remove/tags")
   removeTags() {
     return this.appService.removeTags();
   }
 
-  @Get('process/words')
+  @Get("process/words")
   words() {
     return this.appService.words();
   }
 
-  @Get('process/consolidate')
+  @Get("process/consolidate")
   consolidated() {
     return this.appService.consolidate();
   }
 
-  @Get('process/tokenize')
+  @Get("process/tokenize")
   tokenize() {
     return this.appService.tokenize();
+  }
+
+  @Get("process/counter")
+  counter() {
+    return this.appService.counter();
   }
 }
