@@ -492,8 +492,80 @@ export class AppService {
       );
       return result;
     });
-    
+  }
 
-    //return;
+  async posting() {
+    let totalStart = Date.now();
+    //Paso 0. Generar archivos de salida
+
+    //Posting
+    fs.writeFileSync("./src/output/posting/posting.txt", "");
+    //Diccionario
+    fs.writeFileSync("./src/output/posting/diccionario.txt", "");
+    //Log
+    fs.writeFileSync(
+      "./src/output/logs/act-7.txt",
+      "Archivo\t\t\t\t\tTiempo\n-----------------------------------"
+    );
+
+    //1. Crear diccionario de palabras a partir del archivo consolidado
+    let file = fs.readFileSync(`./src/output/sortedConsolidated.txt`, "utf-8");
+    let wordArray = file.split(/\r?\n/);
+    console.log("Total de palabras en " + ": " + wordArray.length);
+
+    let counter = {};
+    for (const word of wordArray) {
+      if (word.length > 0) {
+        counter[word] = (counter[word] || 0) + 1;
+      }
+    }
+
+    let result = Object.keys(counter).map((key) => [key, counter[key], 0]);
+
+    //2. Recorrer cada archivo y contabilizar las palabras repetidas
+    fs.readdir("./src/output/words", async (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+      for (const name of files) {
+        if (name != ".DS_Store") {
+          let start = Date.now();
+          let file = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
+          let sanitized = file.replace(/[^A-Za-z0-9\n\r]/g, "");
+          let escaped = sanitized.replace(/^\s*[\r\n]/gm, "");
+          let wordArray = escaped.split(/\r?\n/);
+          for (const entry of result) {
+            if (wordArray.includes(entry[0])) {
+              //console.log(entry);
+              entry[2]++;
+            }
+          }
+          //Actualizar el log
+          let end = Date.now();
+          let log = `\n${name}\t\t\t\t${end - start} ms`;
+          fs.appendFile("./src/output/logs/act-6.txt", log, (err) => {
+            if (err) {
+              console.log("Error al actualizar el log: " + name);
+            }
+          });
+          console.log("Word loop ended - " + name);
+        }
+      }
+      //8. Actualizar log
+      let totalTime = Date.now() - totalStart;
+
+      console.log("File loop ended");
+      let json = JSON.stringify(result);
+      fs.writeFileSync("./src/output/counter.json", json);
+      await delay(500);
+      fs.appendFile(
+        "./src/output/logs/act-6.txt",
+        `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`,
+        (err) => {
+          if (err) console.log("Error al actualizar los logs");
+        }
+      );
+      return result;
+    });
   }
 }
