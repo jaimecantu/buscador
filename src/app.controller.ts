@@ -39,4 +39,9 @@ export class AppController {
   counter() {
     return this.appService.counter();
   }
+
+  @Get("process/posting")
+  posting() {
+    return this.appService.posting();
+  }
 }
