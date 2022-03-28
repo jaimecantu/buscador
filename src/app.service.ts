@@ -1,9 +1,11 @@
 import { ConsoleLogger, Injectable } from "@nestjs/common";
 const fs = require("fs");
+const gracefulFs = require("graceful-fs");
 const date = require("date-and-time");
 var striptags = require("striptags");
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 const write = require("write-file-utf8");
+
 @Injectable()
 export class AppService {
   async readFile(name: string) {
@@ -482,7 +484,7 @@ export class AppService {
       console.log("File loop ended");
       let json = JSON.stringify(result);
       fs.writeFileSync("./src/output/counter.json", json);
-      await delay (500)
+      await delay(500);
       fs.appendFile(
         "./src/output/logs/act-6.txt",
         `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`,
@@ -512,7 +514,7 @@ export class AppService {
     let counter = {};
     for (const word of wordArray) {
       if (word.length > 0) {
-        counter[word] = {totalFiles: 0, files: new Map(), word: word};
+        counter[word] = { totalFiles: 0, files: new Map(), word: word };
       }
     }
 
@@ -530,10 +532,10 @@ export class AppService {
           let wordArray = escaped.split(/\r?\n/);
           //let wordSet = [...new Set(wordArray)];
           for await (const entry of wordArray) {
-            if(entry.toString().length > 0 && entry.toString() in counter){
+            if (entry.toString().length > 0 && entry.toString() in counter) {
               if (counter[entry.toString()].files.has(name)) {
                 let count = counter[entry.toString()].files.get(name) + 1;
-                counter[entry.toString()].files.set(name, count)
+                counter[entry.toString()].files.set(name, count);
               } else {
                 counter[entry.toString()].files.set(name, 1);
                 counter[entry.toString()].totalFiles++;
@@ -542,7 +544,7 @@ export class AppService {
             }
           }
           //return counter;
-          
+
           //Actualizar el log
           let end = Date.now();
           let log = `\n${name}\t\t\t\t${end - start} ms`;
@@ -561,7 +563,7 @@ export class AppService {
       console.log("File loop ended");
       let result = [];
       for (const key in counter) {
-        let obj = {}
+        let obj = {};
         obj[key] = {
           totalFiles: counter[key].totalFiles,
           files: Object.fromEntries(counter[key].files),
@@ -580,5 +582,129 @@ export class AppService {
       );
       return counter;
     });
+  }
+
+  async hashtable() {
+    let hash = new Map();
+    let totalStart = Date.now();
+    fs.readdir("./src/output/words", async (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+      for (const name of files) {
+        let words = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
+        let wordArray = words.split(/\r?\n/);
+        for (const word of wordArray) {
+          if (hash.has(word[0])) {
+            let value = hash.get(word[0]);
+            value.push(word);
+            hash.set(word[0], value);
+          } else {
+            hash.set(word[0], [word]);
+          }
+        }
+      }
+
+      let result = Object.fromEntries(hash);
+      let json = JSON.stringify(result);
+      fs.writeFileSync("./src/output/hashtable.json", json);
+      return result;
+    });
+  }
+
+  async stoplist() {
+    //1. Obtener el listado de palabras a eliminar
+    let file = fs.readFileSync(
+      "./src/output/stoplist/stop_words_english.json",
+      "utf-8"
+    );
+    let parsed = file.replace(/[\[\]\"\,]/gm, "");
+    parsed = parsed.replace(/ /g, "");
+    let wordArray = parsed.split(/\r?\n/);
+    const stoplist = wordArray.filter((e) => e);
+
+    //2. Filtrar cada archivo
+    fs.readdir("./src/output/words", (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+
+      for (const name of files) {
+        if (name !== ".DS_STORE") {
+          let words = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
+          let wordArray = words.split(/\r?\n/);
+          let result = wordArray.filter((word) => {
+            return !stoplist.includes(word);
+          });
+          //3. Crear un archivo con las palabras filtradas
+          let json = JSON.stringify(result);
+          fs.writeFileSync(`./src/output/stoplist/${name}`, json);
+          //4. Agregar tiempo al log
+        }
+      }
+
+      //5. Agregar totales al log
+    });
+  }
+
+  async weightTokens() {
+    //Crear archivo de salida y log
+    //Log
+    fs.writeFileSync(
+      "./src/output/logs/act-10.txt",
+      "Archivo\t\t\t\t\tTiempo\n-----------------------------------"
+    );
+
+    //Posting
+    fs.writeFileSync(
+      `${__dirname}/output/weightTokens/posting.txt`,
+      "Token;Weight;File\n---------------------------------------"
+    );
+
+    fs.readdir("./src/output/words", (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+      for (const name of files) {
+        if (name !== ".DS_Store") {
+          gracefulFs.readFile(`./src/output/stoplist/${name}`, (err, data) => {
+            if (err) {
+              console.log("Error al leer archivo");
+              return 2;
+            }
+            let wordArray = JSON.parse(data);
+            let totalTokens = wordArray.length;
+
+            let hash = new Map(); // Hash = (palabra, repeticiones)
+            for (const word of wordArray) {
+              if (hash.has(word)) {
+                let value = hash.get(word) + 1;
+                hash.set(word, value);
+              } else {
+                hash.set(word, 1);
+              }
+            }
+
+            for (let key of hash.keys()) {
+              //Formula: (Repeticiones * 100) / totalTokens
+              let result = (hash.get(key) * 100) / totalTokens;
+              //Agregar a archivo de salida
+              gracefulFs.appendFile(
+                `${__dirname}/output/weightTokens/posting.txt`,
+                `\n${key};${result.toFixed(2)};${name}`,
+                (err) => {
+                  if (err) {
+                    console.log(err);
+                    return;
+                  }
+                }
+              );
+            }
+          });
+        }
+      }
+      //return 1;
+    });
+    //return 0;
   }
 }

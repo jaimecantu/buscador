@@ -44,4 +44,19 @@ export class AppController {
   posting() {
     return this.appService.posting();
   }
+
+  @Get("process/hash")
+  hash() {
+    return this.appService.hashtable();
+  }
+
+  @Get("process/stoplist")
+  stoplist() {
+    return this.appService.stoplist();
+  }
+
+  @Get("process/weight")
+  weightTokens() {
+    return this.appService.weightTokens();
+  }
 }
