@@ -530,7 +530,6 @@ export class AppService {
           let sanitized = file.replace(/[^A-Za-z0-9\n\r]/g, "");
           let escaped = sanitized.replace(/^\s*[\r\n]/gm, "");
           let wordArray = escaped.split(/\r?\n/);
-          //let wordSet = [...new Set(wordArray)];
           for await (const entry of wordArray) {
             if (entry.toString().length > 0 && entry.toString() in counter) {
               if (counter[entry.toString()].files.has(name)) {
@@ -539,11 +538,9 @@ export class AppService {
               } else {
                 counter[entry.toString()].files.set(name, 1);
                 counter[entry.toString()].totalFiles++;
-                //console.log(counter[entry.toString()]);
               }
             }
           }
-          //return counter;
 
           //Actualizar el log
           let end = Date.now();
@@ -556,11 +553,11 @@ export class AppService {
           console.log("Word loop ended - " + name);
         }
       }
-      //return {data: await counter};
-      //8. Actualizar log
+
+      //8. Tomar medición de tiempo final
       let totalTime = Date.now() - totalStart;
 
-      console.log("File loop ended");
+      //9. Convertir resultado en un arreglo de objetos
       let result = [];
       for (const key in counter) {
         let obj = {};
@@ -570,9 +567,11 @@ export class AppService {
         };
         result.push(obj);
       }
+      //10. Convertir el resultado a un string y escribir el archivo de salida
       let json = JSON.stringify(result);
       fs.writeFileSync("./src/output/posting/posting.json", json);
       await delay(500);
+      //11. Agregar totales al log
       fs.appendFile(
         "./src/output/logs/act-7.txt",
         `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`,
@@ -585,29 +584,53 @@ export class AppService {
   }
 
   async hashtable() {
+    //1. Crear Hashtable y medición de tiempo inicial
     let hash = new Map();
     let totalStart = Date.now();
+    //2. Leer todos los archivos
     fs.readdir("./src/output/words", async (err, files) => {
       if (err) {
         console.log(err);
       }
+      let totalLog =
+        "Archivo\t\t\t\t\tTiempo\n-----------------------------------\n";
       for (const name of files) {
-        let words = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
-        let wordArray = words.split(/\r?\n/);
-        for (const word of wordArray) {
-          if (hash.has(word[0])) {
-            let value = hash.get(word[0]);
-            value.push(word);
-            hash.set(word[0], value);
-          } else {
-            hash.set(word[0], [word]);
+        if (name !== ".DS_Store") {
+          let start = Date.now();
+          //3. Convertir el archivo en un arreglo de palabras
+          let words = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
+          let wordArray = words.split(/\r?\n/);
+          //4. Agregar cada palabra al hashtable
+          for (const word of wordArray) {
+            //5. Manejar colisiones
+            if (hash.has(word[0])) {
+              let value = hash.get(word[0]);
+              value.push(word);
+              hash.set(word[0], value);
+            } else {
+              hash.set(word[0], [word]);
+            }
           }
+          //6. Actualizar el log
+          let end = Date.now();
+          let log = `\n${name}\t\t\t\t${end - start} ms`;
+          totalLog += log;
         }
       }
-
+      //7. Convertir el hashtable resultante en un objeto
       let result = Object.fromEntries(hash);
+      //8. Convertir el objeto a string y crear el archivo de salida
       let json = JSON.stringify(result);
       fs.writeFileSync("./src/output/hashtable.json", json);
+      //9. Agregar totales al log
+      let totalTime = Date.now() - totalStart;
+      await delay(500);
+      totalLog += `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`;
+      fs.writeFileSync("./src/output/logs/act-8.txt", totalLog, (err) => {
+        if (err) {
+          console.log("Error al actualizar el log");
+        }
+      });
       return result;
     });
   }
@@ -624,13 +647,18 @@ export class AppService {
     const stoplist = wordArray.filter((e) => e);
 
     //2. Filtrar cada archivo
-    fs.readdir("./src/output/words", (err, files) => {
+    let totalStart = Date.now();
+    fs.readdir("./src/output/words", async (err, files) => {
       if (err) {
         console.log(err);
       }
 
+      let fullLog =
+        "Archivo\t\t\t\t\tTiempo\n-----------------------------------\n";
+
       for (const name of files) {
-        if (name !== ".DS_STORE") {
+        if (name !== ".DS_Store") {
+          let start = Date.now();
           let words = fs.readFileSync(`./src/output/words/${name}`, "utf-8");
           let wordArray = words.split(/\r?\n/);
           let result = wordArray.filter((word) => {
@@ -638,40 +666,50 @@ export class AppService {
           });
           //3. Crear un archivo con las palabras filtradas
           let json = JSON.stringify(result);
-          fs.writeFileSync(`./src/output/stoplist/${name}`, json);
+          let fileName = name.split(".");
+          fs.writeFileSync(`./src/output/stoplist/${fileName[0]}.json`, json);
           //4. Agregar tiempo al log
+          let end = Date.now();
+          fullLog += `${name}\t\t\t\t${end - start} ms\n`;
         }
       }
 
       //5. Agregar totales al log
+      let totalTime = Date.now() - totalStart;
+      await delay(500);
+      fullLog += `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`;
+      fs.writeFileSync("./src/output/logs/act-9.txt", fullLog, (err) => {
+        if (err) console.log("Error al actualizar los logs");
+      });
     });
   }
 
   async weightTokens() {
-    //Crear archivo de salida y log
-    //Log
-    fs.writeFileSync(
-      "./src/output/logs/act-10.txt",
-      "Archivo\t\t\t\t\tTiempo\n-----------------------------------"
-    );
-
+    //Crear archivo de salida
     //Posting
     fs.writeFileSync(
       `${__dirname}/output/weightTokens/posting.txt`,
-      "Token;Weight;File\n---------------------------------------"
+      "Token;Weight;File\n---------------------------------------\n"
     );
 
-    fs.readdir("./src/output/words", (err, files) => {
+    let totalStart = Date.now();
+
+    fs.readdir("./src/output/stoplist", async (err, files) => {
       if (err) {
         console.log(err);
       }
+
+      let totalLog =
+        "Archivo\t\t\t\t\tTiempo\n-----------------------------------\n";
       for (const name of files) {
-        if (name !== ".DS_Store") {
+        let report = "";
+        if (name !== ".DS_Store" && name !== "stop_words_english.json") {
           gracefulFs.readFile(`./src/output/stoplist/${name}`, (err, data) => {
             if (err) {
               console.log("Error al leer archivo");
               return 2;
             }
+            let start = Date.now();
             let wordArray = JSON.parse(data);
             let totalTokens = wordArray.length;
 
@@ -689,20 +727,32 @@ export class AppService {
               //Formula: (Repeticiones * 100) / totalTokens
               let result = (hash.get(key) * 100) / totalTokens;
               //Agregar a archivo de salida
-              gracefulFs.appendFile(
-                `${__dirname}/output/weightTokens/posting.txt`,
-                `\n${key};${result.toFixed(2)};${name}`,
-                (err) => {
-                  if (err) {
-                    console.log(err);
-                    return;
-                  }
-                }
-              );
+              report += `${key};${result.toFixed(2)};${name}\n`;
             }
+
+            gracefulFs.appendFile(
+              `${__dirname}/output/weightTokens/posting.txt`,
+              report,
+              (err) => {
+                if (err) {
+                  console.log(err);
+                  return;
+                }
+              }
+            );
+            //Actualizar log
+            let end = Date.now();
+            totalLog += `${name}\t\t\t\t${end - start} ms\n`;
           });
         }
       }
+      //Agregar totales al log
+      let totalTime = Date.now() - totalStart;
+      await delay(500);
+      totalLog += `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`;
+      fs.writeFileSync("./src/output/logs/act-10.txt", totalLog, (err) => {
+        if (err) console.log("Error al actualizar los logs");
+      });
       //return 1;
     });
     //return 0;
