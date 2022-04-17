@@ -59,4 +59,24 @@ export class AppController {
   weightTokens() {
     return this.appService.weightTokens();
   }
+
+  @Get("process/documents")
+  documents() {
+    return this.appService.documents();
+  }
+
+  @Get("process/index")
+  createIndex() {
+    return this.appService.createIndex();
+  }
+
+  @Get("process/search/:word")
+  search(@Param("word") word: string) {
+    return this.appService.search(word);
+  }
+
+  @Get("process/optimized/:word")
+  optimizedSearch(@Param("word") word: string) {
+    return this.appService.optimizedSearch(word);
+  }
 }

@@ -5,6 +5,7 @@ const date = require("date-and-time");
 var striptags = require("striptags");
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 const write = require("write-file-utf8");
+import { uuid } from "uuidv4";
 
 @Injectable()
 export class AppService {
@@ -558,14 +559,14 @@ export class AppService {
       let totalTime = Date.now() - totalStart;
 
       //9. Convertir resultado en un arreglo de objetos
-      let result = [];
+      let result = {};
       for (const key in counter) {
         let obj = {};
-        obj[key] = {
+        obj = {
           totalFiles: counter[key].totalFiles,
           files: Object.fromEntries(counter[key].files),
         };
-        result.push(obj);
+        result[key] = obj;
       }
       //10. Convertir el resultado a un string y escribir el archivo de salida
       let json = JSON.stringify(result);
@@ -757,4 +758,197 @@ export class AppService {
     });
     //return 0;
   }
+
+  documents () {
+    //0. Crear objeto de salida
+    let result = [];
+    //1. Obtener los nombres del directorio de archivos
+    fs.readdir("./src/files", async (err, files) => {
+      if (err) {
+        console.log(err);
+      }
+      let id = 0;
+      for(const file of files) {
+        id++;
+        let weight = this.calculateWeight(file);
+        //2. Agregar registro
+        result.push({id: id, name: file, weight: weight})
+      }
+      //3. Guardar resultado en archivo
+      fs.writeFileSync("./src/output/document.json", JSON.stringify(result));
+      return result;
+    });
+  } 
+
+  async createIndex() {
+    //1. Obtener listado de todos los nombres de los archivos originales
+    await fs.readdir("./src/output/stoplist", async (err, files) => {
+      if (err) {
+        return { error: `Error al leer los archivos: ${err}` };
+      }
+      let totalStart = Date.now();
+
+      //2. Crear archivo posting base y log
+      fs.writeFileSync(
+        `${__dirname}/output/index/posting.txt`,
+        "Token;Weight;FileID\n---------------------------------------\n"
+      );
+      let totalLog =
+        "Archivo\t\t\t\t\tTiempo\n-----------------------------------\n";
+
+      //3. Asignar un ID único a cada archivo
+      let indexResult = "";
+
+      
+      for (const file of files) {
+        if (file !== ".DS_Store" && file !== "stop_words_english.json") {
+          let id = uuid();
+        let postingResult = "";
+        indexResult += `${id}\t\t\t\t${file}\n`;
+        //4. Obtener weight tokens
+        gracefulFs.readFile(`./src/output/stoplist/${file}`, (err, data) => {
+          if (err) {
+            console.log("Error al leer archivo");
+            return 2;
+          }
+          let start = Date.now();
+          let wordArray = JSON.parse(data);
+          let totalTokens = wordArray.length;
+
+          let hash = new Map(); // Hash = (palabra, repeticiones)
+          for (const word of wordArray) {
+            if (hash.has(word)) {
+              let value = hash.get(word) + 1;
+              hash.set(word, value);
+            } else {
+              hash.set(word, 1);
+            }
+          }
+
+          for (let key of hash.keys()) {
+            //Formula: (Repeticiones * 100) / totalTokens
+            let result = (hash.get(key) * 100) / totalTokens;
+            //Agregar a archivo de salida
+            postingResult += `${key};${result.toFixed(2)};${id}\n`;
+          }
+
+          gracefulFs.appendFile(
+            `${__dirname}/output/index/posting.txt`,
+            postingResult,
+            (err) => {
+              if (err) {
+                console.log(err);
+                return;
+              }
+            }
+          );
+          //Actualizar log
+          let end = Date.now();
+          totalLog += `${file}\t\t\t\t${end - start} ms\n`;
+        });
+      }}
+      //Agregar totales al log
+      let totalTime = Date.now() - totalStart;
+      await delay(500);
+      totalLog += `\n-----------------------------------\nTiempo total de ejecución: \t\t\t${totalTime} ms`;
+      fs.writeFileSync("./src/output/logs/act-11.txt", totalLog, (err) => {
+        if (err) console.log("Error al actualizar los logs");
+      });
+
+      //5. Crear documento de salida con el índice de documentos
+      fs.writeFileSync("./src/output/index/index.txt", indexResult);
+    });
+
+    
+  }
+
+  search(word: string) {
+    //1. Sanitizar la palabra a buscar
+    let sanitized = word.toLowerCase().replace(/[^\x00-\x7F]/g, "");
+    if (sanitized.length < 1) {
+      return { error: "Ingresa caracteres válidos únicamente" };
+    }
+
+    //2. Buscar la palabra en el diccionario
+    const globalDictionary = JSON.parse(
+      fs.readFileSync("./src/output/posting/posting.json", "utf-8")
+    );
+
+    //3. Si la palabra existe, regresar el listado de documentos que la contienen
+    let start = Date.now();
+    const keys = Object.keys(globalDictionary);
+    if (keys.includes(sanitized)) {
+      fs.appendFile("./src/output/logs/act-12.txt", `\n${sanitized}:${Date.now()-start} ms`, (err) => {
+        if(err){
+          console.log("Error al guardar log");
+        }
+      });
+      return globalDictionary[sanitized];
+    }
+
+    //4. Si la palabra no existe, regresar un mensaje de error
+    return {error: "No se encontraron documentos con esa palabra"}
+  }
+
+  async optimizedSearch(word: string) {
+    //1. Sanitizar la palabra a buscar
+    let sanitized = word.toLowerCase().replace(/[^\x00-\x7F]/g, "");
+    if (sanitized.length < 1) {
+      return { error: "Ingresa caracteres válidos únicamente" };
+    }
+
+    //2. Buscar la palabra en el diccionario
+    const globalDictionary = JSON.parse(
+      fs.readFileSync("./src/output/posting/posting.json", "utf-8")
+    );
+
+    //3. Si la palabra existe, regresar el listado de documentos que la contienen
+    const keys = Object.keys(globalDictionary);
+    let start = Date.now();
+    if (keys.includes(sanitized)) {
+      let result = globalDictionary[sanitized];
+      //4. Ordenar los resultados por frecuencia (mayor a menor)
+      let reducedFiles = Object.entries(result.files);
+      let sortedFiles = reducedFiles.sort((a, b) =>
+        a[1]> b[1] ? -1 : 1
+      );
+      result.files = Object.fromEntries(sortedFiles);
+      //Si la palabra aparece en 10 archivos o menos, regresar el resultado completo
+      if (result.totalFiles <= 10 ){
+        fs.appendFile(
+          "./src/output/logs/act-13.txt",
+          `\n${sanitized}:${Date.now() - start} ms`,
+          (err) => {
+            if (err) {
+              console.log("Error al guardar log");
+            }
+          }
+        );
+        return result;
+      }
+      //Si la palabra aparece en más de 10, regresar únicamente el top 10
+      
+      reducedFiles.length = 10;
+      result.files = Object.fromEntries(reducedFiles);
+      fs.appendFile(
+        "./src/output/logs/act-13.txt",
+        `\n${sanitized}:${Date.now() - start} ms`,
+        (err) => {
+          if (err) {
+            console.log("Error al guardar log");
+          }
+        }
+      );
+      return result;
+      
+    }
+
+    //4. Si la palabra no existe, regresar un mensaje de error
+    return { error: "No se encontraron documentos con esa palabra" };
+  }
+
+  calculateWeight(file: string){
+    return Math.random();
+  }
+
 }
