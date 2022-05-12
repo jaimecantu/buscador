@@ -1,6 +1,6 @@
 {
   "name": "buscador",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "author": "",
   "private": true,
@@ -24,9 +24,15 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "date-and-time": "^2.1.0",
+    "graceful-fs": "^4.2.9",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "string-strip-html": "^9.1.6",
+    "striptags": "^3.2.0",
+    "uuidv4": "^6.2.13",
+    "write-file-utf8": "^2.0.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
