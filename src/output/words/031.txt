@@ -1,4 +1,0 @@
-default
-divine
-mercy
-region
